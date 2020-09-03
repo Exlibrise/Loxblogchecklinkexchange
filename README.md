@@ -25,3 +25,28 @@ Contents
 - [How it works](#how-it-works)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
+	- [Middleware](#middleware)
+		- [List of examples](#list-of-examples)
+	- [Client](#client)
+- [Related projects](#related-projects)
+
+Purpose
+-------
+
+Until the rise of cryptocurrencies, if you wanted to monetize your API (set up a paywall), you had to:
+
+1. Use a centralized service (like PayPal)
+    - Can shut you down any time
+    - High fees
+    - Your API users need an account
+    - Can be hacked
+2. Keep track of your API users (keep accounts and their API keys in some database)
+    - Privacy concerns
+    - Data breaches / leaks
+3. Charge for a bunch of requests, like 10.000 at a time, because real per-request payments weren't possible
+
+With cryptocurrencies in general some of those problems were solved, but with long confirmation times and high per-transaction fees a real per-request billing was still not feasable.
+
+But then came the [Lightning Network](https://lightning.network/), an implementation of routed payment channels, which enables *real* **near-instant microtransactions** with **extremely low fees**, which cryptocurrencies have long promised, but never delivered. It's a *second layer* on top of existing cryptocurrencies like Bitcoin that scales far beyond the limitations of the underlying blockchain.
+
+`ln-paywall` makes it easy to set up an API paywall for payments over the Lightning Network.

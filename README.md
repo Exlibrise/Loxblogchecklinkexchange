@@ -123,3 +123,24 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	// Use middleware
+	r.Use(wall.NewGinMiddleware(invoiceOptions, lnClient, storageClient))
+
+	r.GET("/ping", func(c *gin.Context) {
+		c.String(http.StatusOK, "pong")
+	})
+
+	r.Run() // Listen and serve on 0.0.0.0:8080
+}
+```
+
+This is just the most basic example. See the list of examples below for examples with other web frameworks / routers / just the stdlib, as well as for a more complex and useful example.
+
+#### List of examples
+
+Follow the links to the example code files.
+
+Simple examples to show the use for the different web frameworks / routers / just the stdlib:
+
+- [Gin](examples/ping/gin/main.go)
+- [Gin (with c-lightning + Lightning Charge as backend)](examples/ping/gin-charge/main.go)

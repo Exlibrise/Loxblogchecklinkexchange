@@ -95,3 +95,31 @@ Usage
 Get the package with `go get -u github.com/philippgille/ln-paywall/...`.
 
 We strongly encourage you to use vendoring, because as long as `ln-paywall` is version `0.x`, breaking changes may be introduced in new versions, including changes to the package name / import path. The project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) and all notable changes to this project are documented in [RELEASES.md](https://github.com/philippgille/ln-paywall/blob/master/RELEASES.md).
+
+### Middleware
+
+The best way to see how to use `ln-paywall` is by example. In the below examples we create a web service that responds to requests to `/ping` with "pong", using Gin as the web framework.
+
+```Go
+package main
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+	"github.com/philippgille/ln-paywall/ln"
+	"github.com/philippgille/ln-paywall/storage"
+	"github.com/philippgille/ln-paywall/wall"
+)
+
+func main() {
+	r := gin.Default()
+
+	// Configure middleware
+	invoiceOptions := wall.DefaultInvoiceOptions // Price: 1 Satoshi; Memo: "API call"
+	lndOptions := ln.DefaultLNDoptions           // Address: "localhost:10009", CertFile: "tls.cert", MacaroonFile: "invoice.macaroon"
+	storageClient := storage.NewGoMap()          // Local in-memory cache
+	lnClient, err := ln.NewLNDclient(lndOptions)
+	if err != nil {
+		panic(err)
+	}

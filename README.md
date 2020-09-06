@@ -144,3 +144,28 @@ Simple examples to show the use for the different web frameworks / routers / jus
 
 - [Gin](examples/ping/gin/main.go)
 - [Gin (with c-lightning + Lightning Charge as backend)](examples/ping/gin-charge/main.go)
+- [gorilla/mux](examples/ping/gorilla-mux/main.go)
+- [net/http HandlerFunc](examples/ping/handlerfunc/main.go)
+- [Echo](examples/ping/echo/main.go)
+
+More complex and useful example:
+
+- [QR code generation API using Gin](examples/qr-code/main.go)
+	- Ready-to-use Docker image: [https://hub.docker.com/r/philippgille/qr-code/](https://hub.docker.com/r/philippgille/qr-code/)
+	- Try out the demo deployed on [https://lightning.ws](https://lightning.ws)
+
+### Client
+
+```Go
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+
+	"github.com/philippgille/ln-paywall/ln"
+	"github.com/philippgille/ln-paywall/pay"
+)
+
+func main() {
+	// Set up client

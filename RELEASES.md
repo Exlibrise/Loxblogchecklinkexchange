@@ -37,3 +37,33 @@ v0.5.0 (2018-09-24)
 - Added: Package `pay` (issue [#20](https://github.com/philippgille/ln-paywall/issues/20))
     - Interface `pay.LNclient` - Abstraction of a Lightning Network node client for paying LN invoices. Enables developers to write their own implementations if the provided ones aren't enough.
     - Struct `pay.Client` - Replacement for a standard Go `http.Client`
+        - Factory function `NewClient(httpClient *http.Client, lnClient LNclient) Client` - `httpClient` can be passed as `nil`, leading to `http.DefaultClient` being used
+        - Method `Do(req *http.Request) (*http.Response, error)` - Meant to be used as equivalent to the same Go `http.Client` method, but handles the Lightning Network payment in the background.
+        - Method `Get(url string) (*http.Response, error)` - A convenience method for the `Do(...)` method, also an equivalent to the same Go `http.Client` method (regarding its usage)
+    - Example client in `examples/client/main.go`
+    - > Note: Currently only `ln.LNDclient` can be used in the client, because Lightning Charge doesn't support sending payments (and maybe never will)
+- Added: Method `Pay(invoice string) (string, error)` for `ln.LNDclient` - Implements the new `pay.LNclient` interface, so that the `LNDclient` can be used as parameter in the `pay.NewClient(...)` function. (Issue [#20](https://github.com/philippgille/ln-paywall/issues/20))
+- Fixed: A client could cheat in multiple ways, for example use a preimage for a request to endpoint A while the invoice was for endpoint B, with B being cheaper than A. Or if the LN node is used for other purposes as well, a client could send any preimage that might be for a totally different invoice, not related to the API at all. (Issue [#16](https://github.com/philippgille/ln-paywall/issues/16))
+- Fixed: Some info logs were logged to `stderr` instead of `stdout`
+
+### Breaking changes
+
+- Changed: The preimage in the `X-Preimage` header must now be hex encoded instead of Base64 encoded. The hex encoded representation is the typical representation, as used by "lncli listpayments", Eclair on Android and bolt11 payment request decoders like [https://lndecode.com](https://lndecode.com). Base64 was used previously because "lncli listinvoices" uses that encoding. (Issue [#8](https://github.com/philippgille/ln-paywall/issues/8))
+- Changed: Interface `wall.StorageClient` and thus all its implementations in the `storage` package were significantly changed. The methods are now completely independent of any ln-paywall specifics, with `Set(...)` and `Get(...)` just setting and retrieving any arbitrary `interface{}` to/from the storage. (Required for issue [#16](https://github.com/philippgille/ln-paywall/issues/16).)
+- Changed: The method `GenerateInvoice(int64, string) (string, error)` in the interface `wall.LNclient` was changed to return a `ln.Invoice` object, which makes it much easier to access the preimage hash (a.k.a. payment hash), instead of having to decode the invoice. (Useful for issue [#16](https://github.com/philippgille/ln-paywall/issues/16), in which the preimage hash is required as key in the storage.)
+
+v0.4.0 (2018-09-03)
+-------------------
+
+> Warning: This release contains a lot of renamings and refactorings, so your code will most definitely break. But it paves the way to upcoming features and makes some things easier, like automated testing.
+
+- Added: Package-level documentation
+- Improved: In case of an invalid preimage the error response is much more detailed now. It differentiates between several reasons why the preimage is invalid. Additionally more cases of invalid requests are detected now, so a proper `400 Bad Request` is returned instead of a `500 Internal Server Error`. (Issue [#11](https://github.com/philippgille/ln-paywall/issues/11))
+- Improved: Increased performance when creating multiple middleware instances, because the LN client implementation can now be passed into the middleware factory function and be reused across multiple middleware instances. Previously the LN client was created internally, and a new instance was created with every middleware instance.
+    - Not measured, but probably a bit lower memory consumption and a bit less traffic. Probably not much regarding speed.
+- Fixed: Wrong spelling in an error message
+
+### Breaking changes
+
+- Changed: Renamed package from `pay` to `wall` - this enables us to create a package called `pay` for client-side payments to the paywall in the future
+- Changed: Moved all storage implementations to the new package `storage`

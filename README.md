@@ -202,3 +202,13 @@ Related Projects
 - [https://github.com/ElementsProject/paypercall](https://github.com/ElementsProject/paypercall)
     - Middleware for the JavaScript web framework [Express](https://expressjs.com/)
     - Can also act as reverse proxy for web services that aren't written in JavaScript
+    - Payment: Lightning Network
+    - Backend: c-lightning only (no lnd)
+- [https://github.com/interledgerjs/koa-web-monetization](https://github.com/interledgerjs/koa-web-monetization)
+    - Middleware for the JavaScript web framework [Koa](https://koajs.com/)
+    - Payment: Interledger
+- [https://moonbanking.com/api](https://moonbanking.com/api)
+    - API that *uses* a similar functionality, not *providing* it
+- [https://www.coinbee.io/](https://www.coinbee.io/)
+	- Paid service for Bitcoin paywalls (no Lightning)
+	- Looks like its meant for websites only, not APIs, because the browser session is involved

@@ -87,3 +87,22 @@ v0.3.0 (2018-08-12)
     - Implemented for issue [#4](https://github.com/philippgille/ln-paywall/issues/4), but will be useful for issue [#6](https://github.com/philippgille/ln-paywall/issues/6) as well
 - Added: `ln.LNDclient` - Implements the `pay.LNclient` interface (issue [#4](https://github.com/philippgille/ln-paywall/issues/4))
     - Factory function `ln.NewLNDclient(...)`
+- Improved: Increased middleware performance by reusing the gRPC connection to the lnd backend (issue [#4](https://github.com/philippgille/ln-paywall/issues/4))
+    - With the same setup (local Gin web service, `pay.GoMap` as storage client, remote lnd, same hardware) it took about 100ms per request before, and takes about 25ms per request now. Measured from the arrival of the initial request until the sending of the response with the Lightning invoice (as logged by Gin).
+- Fixed: Success log message mentioned "HandlerFunc" in all middlewares despite it not always being a HandlerFunc
+- Fixed: A wrong HTTP status code was used in responses when an internal error occurred (`400 Bad Request` instead of `500 Internal Server Error`)
+
+### Breaking changes
+
+Package `pay`:
+
+- Changed: Renamed `pay.InvoiceOptions.Amount` to `pay.InvoiceOptions.Price` to avoid misunderstandings
+
+Package `ln` (none of these changes should affect anyone, because this package is meant to be used only internally):
+
+- Removed: `ln.NewLightningClient(...)` - Not required anymore after adding the much more usable `ln.NewLNDclient(...)`.
+- Changed: `ln.GenerateInvoice(...)` from being a function to being a method of `ln.LNDclient` and removed all lnd connection-related parameters which are part of the `LNDclient`. (issue [#4](https://github.com/philippgille/ln-paywall/issues/4))
+- Changed `ln.CheckInvoice(...)` from being a function to being a method of `ln.LNDclient` and removed all lnd connection-related parameters which are part of the `LNDclient`. (issue [#4](https://github.com/philippgille/ln-paywall/issues/4))
+
+v0.2.0 (2018-07-29)
+-------------------

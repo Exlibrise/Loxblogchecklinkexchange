@@ -67,3 +67,23 @@ v0.4.0 (2018-09-03)
 
 - Changed: Renamed package from `pay` to `wall` - this enables us to create a package called `pay` for client-side payments to the paywall in the future
 - Changed: Moved all storage implementations to the new package `storage`
+- Changed: Moved `LNDoptions` and `DefaultLNDoptions` to the from the `wall` (former `pay`) package to the `ln` package
+    - This leads to the same kind of separation and loose coupling as with the storages
+- Changed: All middleware factory functions now take a `LNclient` as second parameter instead of `LNDoptions`
+    - This also leads to the same kind of separation and loose coupling as with the storages
+    - In addition it enables proper mocking of the LN client for tests (preparation for issue [#10](https://github.com/philippgille/ln-paywall/issues/10))
+    - As well as own implementations of LN clients (preparation for issue [#6](https://github.com/philippgille/ln-paywall/issues/6))
+
+v0.3.0 (2018-08-12)
+-------------------
+
+- Added: `pay.NewEchoMiddleware(...)` - A middleware factory function for [Echo](https://github.com/labstack/echo) (issue [#2](https://github.com/philippgille/ln-paywall/issues/2))
+- Added: Bolt DB client (issue [#3](https://github.com/philippgille/ln-paywall/issues/3))
+    - Struct `pay.BoltClient` - Implements the `StorageClient` interface
+    - Factory function `NewBoltClient(...)`
+    - Struct `pay.BoltOptions` - Options for the `BoltClient`
+    - Var `pay.DefaultBoltOptions` - a `BoltOptions` object with default values
+- Added: `pay.LNclient` - An abstraction of a client that connects to a Lightning Network node implementation (like lnd, c-lightning and eclair)
+    - Implemented for issue [#4](https://github.com/philippgille/ln-paywall/issues/4), but will be useful for issue [#6](https://github.com/philippgille/ln-paywall/issues/6) as well
+- Added: `ln.LNDclient` - Implements the `pay.LNclient` interface (issue [#4](https://github.com/philippgille/ln-paywall/issues/4))
+    - Factory function `ln.NewLNDclient(...)`

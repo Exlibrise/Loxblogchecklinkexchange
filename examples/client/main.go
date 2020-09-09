@@ -4,4 +4,4 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"githu
+	"github.com/philippgille/ln-paywal

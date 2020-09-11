@@ -5,4 +5,4 @@ import (
 	"io/ioutil"
 
 	"github.com/philippgille/ln-paywall/ln"
-	"github.com/philipp
+	"github.com/philippgille/ln-paywall/pay"

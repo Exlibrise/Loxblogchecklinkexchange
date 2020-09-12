@@ -6,3 +6,7 @@ import (
 
 	"github.com/philippgille/ln-paywall/ln"
 	"github.com/philippgille/ln-paywall/pay"
+)
+
+func main() {
+	// Set up cl

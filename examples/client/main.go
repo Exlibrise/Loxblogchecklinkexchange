@@ -9,4 +9,5 @@ import (
 )
 
 func main() {
-	// Set up cl
+	// Set up client
+	lndOptions := ln.

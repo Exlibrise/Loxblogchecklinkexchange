@@ -10,4 +10,4 @@ import (
 
 func main() {
 	// Set up client
-	lndOptions := ln.
+	lndOptions := ln.LNDoptions{ // Default 

@@ -10,4 +10,4 @@ import (
 
 func main() {
 	// Set up client
-	lndOptions := ln.LNDoptions{ // Default 
+	lndOptions := ln.LNDoptions{ // Default address: "localhost:10009

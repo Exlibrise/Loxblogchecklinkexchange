@@ -11,4 +11,4 @@ import (
 func main() {
 	// Set up client
 	lndOptions := ln.LNDoptions{ // Default address: "localhost:10009", CertFile: "tls.cert"
-		MacaroonFile: "admin.macaroon", // admin.macaroon is require
+		MacaroonFile: "admin.macaroon", // admin.macaroon is required for making payments

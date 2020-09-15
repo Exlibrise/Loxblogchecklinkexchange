@@ -14,4 +14,7 @@ func main() {
 		MacaroonFile: "admin.macaroon", // admin.macaroon is required for making payments
 	}
 	lnClient, err := ln.NewLNDclient(lndOptions)
-	if err != nil 
+	if err != nil {
+		panic(err)
+	}
+	cl

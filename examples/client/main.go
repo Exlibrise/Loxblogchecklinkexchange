@@ -17,4 +17,4 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	client := pay.NewClient(nil, 
+	client := pay.NewClient(nil, lnClient) // Uses http.Defau

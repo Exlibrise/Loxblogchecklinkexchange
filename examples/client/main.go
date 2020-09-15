@@ -17,4 +17,4 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	cl
+	client := pay.NewClient(nil, 

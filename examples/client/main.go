@@ -20,4 +20,4 @@ func main() {
 	client := pay.NewClient(nil, lnClient) // Uses http.DefaultClient if no http.Client is passed
 
 	// Send request to an ln-paywalled API
-	res, err := client.Get("ht
+	res, err := client.Get("http://localhost:808

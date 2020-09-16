@@ -17,4 +17,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	client := pay.NewClient(nil, lnClient) // Uses http.DefaultClient if no http.Client 
+	client := pay.NewClient(nil, lnClient) // Uses http.DefaultClient if no http.Client is passed
+
+	// Send requ

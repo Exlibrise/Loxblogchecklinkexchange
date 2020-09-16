@@ -19,4 +19,5 @@ func main() {
 	}
 	client := pay.NewClient(nil, lnClient) // Uses http.DefaultClient if no http.Client is passed
 
-	// Send requ
+	// Send request to an ln-paywalled API
+	res,

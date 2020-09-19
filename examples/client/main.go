@@ -26,4 +26,5 @@ func main() {
 	}
 	defer res.Body.Close()
 
-	// Print respon
+	// Print response body
+	resBody, err :=

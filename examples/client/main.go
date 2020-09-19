@@ -24,4 +24,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	def
+	defer res.Body.Close()
+
+	// Print respon

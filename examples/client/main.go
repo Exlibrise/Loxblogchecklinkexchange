@@ -27,4 +27,6 @@ func main() {
 	defer res.Body.Close()
 
 	// Print response body
-	resBody, err := ioutil.ReadAll(res.B
+	resBody, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		panic(e

@@ -29,4 +29,6 @@ func main() {
 	// Print response body
 	resBody, err := ioutil.ReadAll(res.Body)
 	if err != nil {
-		panic(e
+		panic(err)
+	}
+	fmt.Println(string(r

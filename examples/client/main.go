@@ -31,4 +31,5 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(string(r
+	fmt.Println(string(resBody))
+}

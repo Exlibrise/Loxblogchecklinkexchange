@@ -8,3 +8,6 @@ import (
 	"github.com/philippgille/ln-paywall/storage"
 	"github.com/philippgille/ln-paywall/wall"
 )
+
+func main() {
+	e := ech

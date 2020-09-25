@@ -10,4 +10,6 @@ import (
 )
 
 func main() {
-	e := ech
+	e := echo.New()
+
+	// Configure mi

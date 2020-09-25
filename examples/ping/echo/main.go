@@ -13,4 +13,4 @@ func main() {
 	e := echo.New()
 
 	// Configure middleware
-	invoiceOptions := wall.Defau
+	invoiceOptions := wall.DefaultInvoiceOptions // Price: 1

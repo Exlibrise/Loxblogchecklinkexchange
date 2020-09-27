@@ -13,4 +13,5 @@ func main() {
 	e := echo.New()
 
 	// Configure middleware
-	invoiceOptions := wall.DefaultInvoiceOptions // Price: 1 Satoshi; Memo: "API ca
+	invoiceOptions := wall.DefaultInvoiceOptions // Price: 1 Satoshi; Memo: "API call"
+	lndOptions := ln

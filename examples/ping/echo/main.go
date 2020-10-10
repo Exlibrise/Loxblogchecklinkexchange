@@ -20,4 +20,5 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	// Use middlewa
+	// Use middleware
+	e.Use(wall.NewEchoMiddleware

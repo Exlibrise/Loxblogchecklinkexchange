@@ -21,4 +21,4 @@ func main() {
 		panic(err)
 	}
 	// Use middleware
-	e.Use(wall.NewEchoMiddleware
+	e.Use(wall.NewEchoMiddleware(invoiceOptions, lnClient,

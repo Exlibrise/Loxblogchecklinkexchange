@@ -23,4 +23,5 @@ func main() {
 	// Use middleware
 	e.Use(wall.NewEchoMiddleware(invoiceOptions, lnClient, storageClient, nil))
 
-	e.GET("/ping", func(c echo.Cont
+	e.GET("/ping", func(c echo.Context) error {
+		return c.

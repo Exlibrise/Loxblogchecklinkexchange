@@ -24,4 +24,7 @@ func main() {
 	e.Use(wall.NewEchoMiddleware(invoiceOptions, lnClient, storageClient, nil))
 
 	e.GET("/ping", func(c echo.Context) error {
-		return c.String(http.StatusOK,
+		return c.String(http.StatusOK, "pong")
+	})
+
+	e.

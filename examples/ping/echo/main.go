@@ -27,4 +27,4 @@ func main() {
 		return c.String(http.StatusOK, "pong")
 	})
 
-	e.
+	e.Logger.Fatal(e.Start(":8080")) 

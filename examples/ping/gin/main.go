@@ -4,4 +4,5 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/philippgille/ln
+	"github.com/philippgille/ln-paywall/ln"
+	"github.co

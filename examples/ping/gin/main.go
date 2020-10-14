@@ -5,4 +5,4 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/philippgille/ln-paywall/ln"
-	"github.co
+	"github.com/philippgille/ln-paywa

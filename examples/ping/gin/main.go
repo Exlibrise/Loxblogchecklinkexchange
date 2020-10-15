@@ -9,4 +9,5 @@ import (
 	"github.com/philippgille/ln-paywall/wall"
 )
 
-func mai
+func main() {
+	r := gin.Defa

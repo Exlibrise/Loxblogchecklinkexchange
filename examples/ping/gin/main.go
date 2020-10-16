@@ -13,4 +13,4 @@ func main() {
 	r := gin.Default()
 
 	// Configure middleware
-	invoiceOptions := wall.D
+	invoiceOptions := wall.DefaultInvoiceOptions /

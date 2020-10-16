@@ -10,4 +10,6 @@ import (
 )
 
 func main() {
-	r := gin.Defa
+	r := gin.Default()
+
+	// Configure middlewar

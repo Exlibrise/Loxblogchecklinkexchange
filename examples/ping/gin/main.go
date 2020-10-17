@@ -13,4 +13,4 @@ func main() {
 	r := gin.Default()
 
 	// Configure middleware
-	invoiceOptions := wall.DefaultInvoiceOptions /
+	invoiceOptions := wall.DefaultInvoiceOptions // Price: 1 Satoshi; Memo: "API c

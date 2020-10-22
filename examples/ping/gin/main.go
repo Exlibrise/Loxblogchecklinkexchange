@@ -18,4 +18,6 @@ func main() {
 	storageClient := storage.NewGoMap()          // Local in-memory cache
 	lnClient, err := ln.NewLNDclient(lndOptions)
 	if err != nil {
-		pa
+		panic(err)
+	}
+	// Use middleware

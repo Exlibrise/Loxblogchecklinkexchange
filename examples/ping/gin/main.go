@@ -21,4 +21,4 @@ func main() {
 		panic(err)
 	}
 	// Use middleware
-	r.Use(wall.NewGinMidd
+	r.Use(wall.NewGinMiddleware(invoiceOptions, lnClient, sto

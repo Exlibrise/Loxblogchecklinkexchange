@@ -21,3 +21,4 @@ func main() {
 		panic(err)
 	}
 	// Use middleware
+	r.Use(wall.NewGinMidd

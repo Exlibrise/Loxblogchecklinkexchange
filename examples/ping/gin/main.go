@@ -17,3 +17,5 @@ func main() {
 	lndOptions := ln.DefaultLNDoptions           // Address: "localhost:10009", CertFile: "tls.cert", MacaroonFile: "invoice.macaroon"
 	storageClient := storage.NewGoMap()          // Local in-memory cache
 	lnClient, err := ln.NewLNDclient(lndOptions)
+	if err != nil {
+		pa

@@ -21,4 +21,6 @@ func main() {
 		panic(err)
 	}
 	// Use middleware
-	r.Use(wall.NewGinMiddleware(invoiceOptions, lnClient, sto
+	r.Use(wall.NewGinMiddleware(invoiceOptions, lnClient, storageClient))
+
+	r.GET("/pi

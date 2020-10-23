@@ -23,4 +23,4 @@ func main() {
 	// Use middleware
 	r.Use(wall.NewGinMiddleware(invoiceOptions, lnClient, storageClient))
 
-	r.GET("/pi
+	r.GET("/ping", func(c *gin.Conte

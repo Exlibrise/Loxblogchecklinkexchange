@@ -27,4 +27,5 @@ func main() {
 		c.String(http.StatusOK, "pong")
 	})
 
-	r.Run() // Listen and serve
+	r.Run() // Listen and serve on 0.0.0.0:8080
+}

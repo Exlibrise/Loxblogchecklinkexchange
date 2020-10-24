@@ -27,4 +27,4 @@ func main() {
 		c.String(http.StatusOK, "pong")
 	})
 
-	
+	r.Run() // Listen and serve

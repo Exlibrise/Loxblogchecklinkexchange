@@ -6,4 +6,5 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/philippgi
+	"github.com/philippgille/ln-paywall/ln"
+	"

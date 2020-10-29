@@ -8,4 +8,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/philippgille/ln-paywall/ln"
 	"github.com/philippgille/ln-paywall/storage"
-	"github.com/philippgille/
+	"github.com/philippgille/ln-paywall/wall"
+)
+
+func ping

@@ -12,4 +12,7 @@ import (
 )
 
 func pingHandler(w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.Stat
+	w.WriteHeader(http.StatusOK)
+	fmt.Fprintf(w, "pong")
+}
+

@@ -11,4 +11,5 @@ import (
 	"github.com/philippgille/ln-paywall/wall"
 )
 
-func pingHandler(w http.ResponseWriter, r *http.Req
+func pingHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.Stat

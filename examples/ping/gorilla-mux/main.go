@@ -20,4 +20,4 @@ func main() {
 	r := mux.NewRouter()
 
 	// Configure middleware
-	invoiceOptions := 
+	invoiceOptions := wall.DefaultInvoiceOptions // 

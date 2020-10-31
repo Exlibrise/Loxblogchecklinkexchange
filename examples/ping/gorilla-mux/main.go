@@ -17,4 +17,6 @@ func pingHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	r := mux.N
+	r := mux.NewRouter()
+
+	// Config

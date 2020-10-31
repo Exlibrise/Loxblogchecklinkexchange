@@ -16,3 +16,5 @@ func pingHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "pong")
 }
 
+func main() {
+	r := mux.N

@@ -20,4 +20,4 @@ func main() {
 	r := mux.NewRouter()
 
 	// Configure middleware
-	invoiceOptions := wall.DefaultInvoiceOptions // 
+	invoiceOptions := wall.DefaultInvoiceOptions // Price: 1 Satoshi; Memo: "API

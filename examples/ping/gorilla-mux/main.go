@@ -21,4 +21,4 @@ func main() {
 
 	// Configure middleware
 	invoiceOptions := wall.DefaultInvoiceOptions // Price: 1 Satoshi; Memo: "API call"
-	lndOptions := ln.DefaultLNDoptions           // Address: "loc
+	lndOptions := ln.DefaultLNDoptions           // Address: "localhost:10009", CertFile: "tls.

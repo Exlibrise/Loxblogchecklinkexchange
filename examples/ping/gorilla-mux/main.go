@@ -28,4 +28,6 @@ func main() {
 		panic(err)
 	}
 	// Use middleware
-	r.Use(wall.NewHandlerMiddleware(invoiceOptions, lnCl
+	r.Use(wall.NewHandlerMiddleware(invoiceOptions, lnClient, storageClient))
+
+	r

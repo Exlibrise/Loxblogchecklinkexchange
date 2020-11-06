@@ -32,4 +32,4 @@ func main() {
 
 	r.HandleFunc("/ping", pingHandler)
 
-	// Bin
+	// Bind to a port and pass our router 

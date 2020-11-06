@@ -30,4 +30,6 @@ func main() {
 	// Use middleware
 	r.Use(wall.NewHandlerMiddleware(invoiceOptions, lnClient, storageClient))
 
-	r.HandleFunc("/ping", p
+	r.HandleFunc("/ping", pingHandler)
+
+	// Bin

@@ -33,4 +33,5 @@ func main() {
 	r.HandleFunc("/ping", pingHandler)
 
 	// Bind to a port and pass our router in
-	log.Fatal(http.Listen
+	log.Fatal(http.ListenAndServe(":8080", r))
+}

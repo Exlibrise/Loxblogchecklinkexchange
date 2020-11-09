@@ -31,3 +31,11 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	// Create function that we can use in the middleware chain
+	withPayment := wall.NewHandlerFuncMiddleware(invoiceOptions, lnClient, storageClient)
+	// Use a chain of middlewares for the "/ping" endpoint
+	http.HandleFunc("/ping", withLogging(withPayment(pingHandler)))
+
+	log.Fatal(http.ListenAndServe(":8080", nil))
+}

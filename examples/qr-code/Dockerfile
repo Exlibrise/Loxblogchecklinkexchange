@@ -4,4 +4,4 @@
 # https://docs.docker.com/engine/userguide/eng-image/multistage-build/
 
 # Builder image
-# Don't bot
+# Don't bother to clean up the image - 

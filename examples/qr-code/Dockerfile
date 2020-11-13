@@ -4,4 +4,5 @@
 # https://docs.docker.com/engine/userguide/eng-image/multistage-build/
 
 # Builder image
-# Don't bother to clean up the image - 
+# Don't bother to clean up the image - it's only used for building
+F

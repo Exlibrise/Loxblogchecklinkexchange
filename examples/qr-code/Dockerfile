@@ -3,4 +3,5 @@
 # It makes use of multi-stage builds and requires Docker 17.05 or later:
 # https://docs.docker.com/engine/userguide/eng-image/multistage-build/
 
-# Build
+# Builder image
+# Don't bot

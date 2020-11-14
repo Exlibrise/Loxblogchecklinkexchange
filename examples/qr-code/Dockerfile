@@ -5,4 +5,6 @@
 
 # Builder image
 # Don't bother to clean up the image - it's only used for building
-FROM golang:1.10-alpine a
+FROM golang:1.10-alpine as builder
+
+RUN apk add --no-c

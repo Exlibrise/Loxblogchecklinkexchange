@@ -5,4 +5,4 @@
 
 # Builder image
 # Don't bother to clean up the image - it's only used for building
-F
+FROM golang:1.10-alpine a

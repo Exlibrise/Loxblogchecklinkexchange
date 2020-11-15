@@ -10,4 +10,5 @@ FROM golang:1.10-alpine as builder
 RUN apk add --no-cache git
 
 RUN go env
-RUN go get -v "github.com/phil
+RUN go get -v "github.com/philippgille/ln-paywall/..."
+RUN

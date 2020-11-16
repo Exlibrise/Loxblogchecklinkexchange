@@ -11,4 +11,4 @@ RUN apk add --no-cache git
 
 RUN go env
 RUN go get -v "github.com/philippgille/ln-paywall/..."
-RUN
+RUN go get -v "github.com/skip2/g

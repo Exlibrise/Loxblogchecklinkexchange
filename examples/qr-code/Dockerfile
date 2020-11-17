@@ -13,4 +13,5 @@ RUN go env
 RUN go get -v "github.com/philippgille/ln-paywall/..."
 RUN go get -v "github.com/skip2/go-qrcode"
 
-WORKDIR /
+WORKDIR /go/src/api
+COPY main.go .

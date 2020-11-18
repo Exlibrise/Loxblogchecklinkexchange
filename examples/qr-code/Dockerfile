@@ -15,3 +15,6 @@ RUN go get -v "github.com/skip2/go-qrcode"
 
 WORKDIR /go/src/api
 COPY main.go .
+RUN go build -v
+
+# Runtime

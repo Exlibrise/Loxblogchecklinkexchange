@@ -17,4 +17,7 @@ WORKDIR /go/src/api
 COPY main.go .
 RUN go build -v
 
-# Runtime
+# Runtime image
+FROM alpine
+
+LABEL ma

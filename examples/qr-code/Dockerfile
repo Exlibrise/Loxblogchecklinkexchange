@@ -20,4 +20,4 @@ RUN go build -v
 # Runtime image
 FROM alpine
 
-LABEL ma
+LABEL maintainer "Philipp Gille"

@@ -23,4 +23,4 @@ FROM alpine
 LABEL maintainer "Philipp Gille"
 
 WORKDIR /root/
-COPY --from=b
+COPY --from=builder /go/src/api/api 

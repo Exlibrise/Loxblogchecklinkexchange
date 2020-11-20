@@ -21,3 +21,6 @@ RUN go build -v
 FROM alpine
 
 LABEL maintainer "Philipp Gille"
+
+WORKDIR /root/
+COPY --from=b

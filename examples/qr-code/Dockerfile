@@ -23,4 +23,7 @@ FROM alpine
 LABEL maintainer "Philipp Gille"
 
 WORKDIR /root/
-COPY --from=builder /go/src/api/api 
+COPY --from=builder /go/src/api/api ./
+RUN mkdir data/
+
+VOLUME [ "/ro

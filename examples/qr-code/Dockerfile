@@ -29,4 +29,5 @@ RUN mkdir data/
 VOLUME [ "/root/data" ]
 EXPOSE 8080
 
-ENTRYP
+ENTRYPOINT ["./api"]
+CMD ["-

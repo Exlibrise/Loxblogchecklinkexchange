@@ -26,4 +26,7 @@ WORKDIR /root/
 COPY --from=builder /go/src/api/api ./
 RUN mkdir data/
 
-VOLUME [ "/ro
+VOLUME [ "/root/data" ]
+EXPOSE 8080
+
+ENTRYP

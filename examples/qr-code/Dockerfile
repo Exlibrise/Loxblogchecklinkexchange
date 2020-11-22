@@ -30,4 +30,4 @@ VOLUME [ "/root/data" ]
 EXPOSE 8080
 
 ENTRYPOINT ["./api"]
-CMD ["-
+CMD ["-help"]

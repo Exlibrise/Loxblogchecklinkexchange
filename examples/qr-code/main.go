@@ -6,4 +6,5 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/phil
+	"github.com/philippgille/ln-paywall/ln"
+	

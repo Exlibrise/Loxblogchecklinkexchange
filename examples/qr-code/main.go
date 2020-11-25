@@ -8,4 +8,4 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/philippgille/ln-paywall/ln"
 	"github.com/philippgille/ln-paywall/storage"
-	"git
+	"github.com/philippgille/ln-

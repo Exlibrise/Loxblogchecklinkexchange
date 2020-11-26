@@ -9,4 +9,4 @@ import (
 	"github.com/philippgille/ln-paywall/ln"
 	"github.com/philippgille/ln-paywall/storage"
 	"github.com/philippgille/ln-paywall/wall"
-	qr
+	qrcode "github.com/

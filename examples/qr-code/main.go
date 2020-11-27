@@ -12,4 +12,4 @@ import (
 	qrcode "github.com/skip2/go-qrcode"
 )
 
-var 
+var lndAddress = flag.String("ad

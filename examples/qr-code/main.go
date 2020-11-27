@@ -9,4 +9,7 @@ import (
 	"github.com/philippgille/ln-paywall/ln"
 	"github.com/philippgille/ln-paywall/storage"
 	"github.com/philippgille/ln-paywall/wall"
-	qrcode "github.com/
+	qrcode "github.com/skip2/go-qrcode"
+)
+
+var 

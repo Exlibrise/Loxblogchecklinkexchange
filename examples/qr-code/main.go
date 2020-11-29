@@ -12,4 +12,5 @@ import (
 	qrcode "github.com/skip2/go-qrcode"
 )
 
-var lndAddress = flag.String("addr", "localhost:10009", "Address of the lnd node (includin
+var lndAddress = flag.String("addr", "localhost:10009", "Address of the lnd node (including gRPC port)")
+var da

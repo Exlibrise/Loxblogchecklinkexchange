@@ -13,4 +13,4 @@ import (
 )
 
 var lndAddress = flag.String("addr", "localhost:10009", "Address of the lnd node (including gRPC port)")
-var dataDir = flag.String("dataDir", "data/", "Relative path to the data dir
+var dataDir = flag.String("dataDir", "data/", "Relative path to the data directory, where tls.cert and in

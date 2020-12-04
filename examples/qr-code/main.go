@@ -14,4 +14,4 @@ import (
 
 var lndAddress = flag.String("addr", "localhost:10009", "Address of the lnd node (including gRPC port)")
 var dataDir = flag.String("dataDir", "data/", "Relative path to the data directory, where tls.cert and invoice.macaroon are located")
-var price = flag.Int64("price", 1000, "Price of one request in Satoshis (at an exchange rate 
+var price = flag.Int64("price", 1000, "Price of one request in Satoshis (at an exchange rate of $1,000 for 1 BTC 100

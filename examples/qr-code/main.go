@@ -19,4 +19,4 @@ var price = flag.Int64("price", 1000, "Price of one request in Satoshis (at an e
 func main() {
 	flag.Parse()
 
-	
+	// Make sure the path to

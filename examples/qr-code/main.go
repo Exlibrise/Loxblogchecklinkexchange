@@ -20,4 +20,5 @@ func main() {
 	flag.Parse()
 
 	// Make sure the path to the data directory ends with "/"
-	dataDirSuffixed 
+	dataDirSuffixed := *dataDir
+	if !s

@@ -21,4 +21,4 @@ func main() {
 
 	// Make sure the path to the data directory ends with "/"
 	dataDirSuffixed := *dataDir
-	if !s
+	if !strings.HasSuffix(dat

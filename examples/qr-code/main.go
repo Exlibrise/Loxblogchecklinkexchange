@@ -22,4 +22,4 @@ func main() {
 	// Make sure the path to the data directory ends with "/"
 	dataDirSuffixed := *dataDir
 	if !strings.HasSuffix(dataDirSuffixed, "/") {
-		dataDi
+		dataDirSuffixed += "/"

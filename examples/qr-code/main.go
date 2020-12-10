@@ -23,3 +23,8 @@ func main() {
 	dataDirSuffixed := *dataDir
 	if !strings.HasSuffix(dataDirSuffixed, "/") {
 		dataDirSuffixed += "/"
+	}
+
+	r := gin.Default()
+
+	// Configur

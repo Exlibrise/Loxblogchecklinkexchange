@@ -27,4 +27,7 @@ func main() {
 
 	r := gin.Default()
 
-	// Configur
+	// Configure middleware
+
+	// Invoice
+	invoic

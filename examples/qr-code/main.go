@@ -30,4 +30,4 @@ func main() {
 	// Configure middleware
 
 	// Invoice
-	invoic
+	invoiceOptions := wall.InvoiceOp

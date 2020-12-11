@@ -30,4 +30,5 @@ func main() {
 	// Configure middleware
 
 	// Invoice
-	invoiceOptions := wall.InvoiceOp
+	invoiceOptions := wall.InvoiceOptions{
+		Memo:  "QR

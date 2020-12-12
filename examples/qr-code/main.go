@@ -31,4 +31,4 @@ func main() {
 
 	// Invoice
 	invoiceOptions := wall.InvoiceOptions{
-		Memo:  "QR
+		Memo:  "QR code generation API call

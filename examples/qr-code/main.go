@@ -36,4 +36,5 @@ func main() {
 	}
 
 	// LN client
-	lndOptio
+	lndOptions := ln.LNDoptions{
+		Add

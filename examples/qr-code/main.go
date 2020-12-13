@@ -34,3 +34,6 @@ func main() {
 		Memo:  "QR code generation API call",
 		Price: *price,
 	}
+
+	// LN client
+	lndOptio

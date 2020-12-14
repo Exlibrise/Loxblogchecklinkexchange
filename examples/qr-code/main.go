@@ -37,4 +37,5 @@ func main() {
 
 	// LN client
 	lndOptions := ln.LNDoptions{
-		Add
+		Address:      *lndAddress,
+	

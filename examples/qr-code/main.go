@@ -38,4 +38,4 @@ func main() {
 	// LN client
 	lndOptions := ln.LNDoptions{
 		Address:      *lndAddress,
-		CertFile:     dataDir
+		CertFile:     dataDirSuffixed + "tls.cer

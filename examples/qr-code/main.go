@@ -39,4 +39,4 @@ func main() {
 	lndOptions := ln.LNDoptions{
 		Address:      *lndAddress,
 		CertFile:     dataDirSuffixed + "tls.cert",
-		MacaroonFile: d
+		MacaroonFile: dataDirSuffixed + "

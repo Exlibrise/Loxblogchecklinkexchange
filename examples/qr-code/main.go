@@ -41,4 +41,5 @@ func main() {
 		CertFile:     dataDirSuffixed + "tls.cert",
 		MacaroonFile: dataDirSuffixed + "invoice.macaroon",
 	}
-	lnClient, err := ln.NewLNDclient
+	lnClient, err := ln.NewLNDclient(lndOptions)
+	if err 

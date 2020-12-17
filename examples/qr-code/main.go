@@ -42,4 +42,6 @@ func main() {
 		MacaroonFile: dataDirSuffixed + "invoice.macaroon",
 	}
 	lnClient, err := ln.NewLNDclient(lndOptions)
-	if err 
+	if err != nil {
+		panic(err)
+	}

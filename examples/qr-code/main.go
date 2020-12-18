@@ -47,4 +47,5 @@ func main() {
 	}
 
 	// Storage
-	boltOptions :=
+	boltOptions := storage.BoltOptions{
+		Path:

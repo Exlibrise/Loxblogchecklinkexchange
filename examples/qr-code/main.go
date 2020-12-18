@@ -48,4 +48,4 @@ func main() {
 
 	// Storage
 	boltOptions := storage.BoltOptions{
-		Path:
+		Path: dataDirSuffixed + "qr-code.db",

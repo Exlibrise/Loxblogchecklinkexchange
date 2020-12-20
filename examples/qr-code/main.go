@@ -56,4 +56,6 @@ func main() {
 	}
 
 	// Use middleware
-	r.Use(wall.NewGinMiddleware(invoiceOptions, 
+	r.Use(wall.NewGinMiddleware(invoiceOptions, lnClient, storageClient))
+
+	r.

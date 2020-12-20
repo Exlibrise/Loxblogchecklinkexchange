@@ -51,4 +51,9 @@ func main() {
 		Path: dataDirSuffixed + "qr-code.db",
 	}
 	storageClient, err := storage.NewBoltClient(boltOptions)
-	if err != nil 
+	if err != nil {
+		panic(err)
+	}
+
+	// Use middleware
+	r.Use(wall.NewGin

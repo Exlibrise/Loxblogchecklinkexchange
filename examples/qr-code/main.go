@@ -58,4 +58,4 @@ func main() {
 	// Use middleware
 	r.Use(wall.NewGinMiddleware(invoiceOptions, lnClient, storageClient))
 
-	r.
+	r.GET("/qr", qrHandl

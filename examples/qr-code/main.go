@@ -60,4 +60,4 @@ func main() {
 
 	r.GET("/qr", qrHandler)
 
-	r.Run() // Listen an
+	r.Run() // Listen and serve on 0.0.0.0:808

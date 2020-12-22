@@ -63,4 +63,5 @@ func main() {
 	r.Run() // Listen and serve on 0.0.0.0:8080
 }
 
-func qrHandler(c 
+func qrHandler(c *gin.Context) {
+	data := 

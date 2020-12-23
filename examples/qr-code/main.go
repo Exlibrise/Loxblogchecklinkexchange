@@ -65,4 +65,5 @@ func main() {
 
 func qrHandler(c *gin.Context) {
 	data := c.Query("data")
-	if dat
+	if data == "" {
+		c.St

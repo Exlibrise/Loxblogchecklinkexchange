@@ -66,4 +66,4 @@ func main() {
 func qrHandler(c *gin.Context) {
 	data := c.Query("data")
 	if data == "" {
-		c.String(http.StatusBadRequest, "The
+		c.String(http.StatusBadRequest, "The query parameter \"da

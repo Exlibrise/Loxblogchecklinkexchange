@@ -68,4 +68,5 @@ func qrHandler(c *gin.Context) {
 	if data == "" {
 		c.String(http.StatusBadRequest, "The query parameter \"data\" is missing")
 		c.Abort()
-	} else 
+	} else {
+		qrBytes, err := qrcode.Encode(d

@@ -70,4 +70,5 @@ func qrHandler(c *gin.Context) {
 		c.Abort()
 	} else {
 		qrBytes, err := qrcode.Encode(data, qrcode.Medium, 256)
-		if e
+		if err != nil {
+			c.String

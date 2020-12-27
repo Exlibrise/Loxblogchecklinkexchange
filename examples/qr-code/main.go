@@ -71,4 +71,4 @@ func qrHandler(c *gin.Context) {
 	} else {
 		qrBytes, err := qrcode.Encode(data, qrcode.Medium, 256)
 		if err != nil {
-			c.String
+			c.String(http.StatusInternalServerError

@@ -74,4 +74,4 @@ func qrHandler(c *gin.Context) {
 			c.String(http.StatusInternalServerError, "There was an error encoding the data as QR code")
 			c.Abort()
 		} else {
-			c.Data(http.Statu
+			c.Data(http.StatusOK, "image/png", qrBytes)

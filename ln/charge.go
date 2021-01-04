@@ -48,3 +48,24 @@ func (c ChargeClient) GenerateInvoice(amount int64, memo string) (Invoice, error
 	body, err := ioutil.ReadAll(res.Body)
 	if err != nil {
 		return result, err
+	}
+	err = res.Body.Close()
+	if err != nil {
+		return result, err
+	}
+	invoice, err := deserializeInvoice(body)
+	if err != nil {
+		return result, err
+	}
+
+	result.ImplDepID = invoice.ID
+	result.PaymentHash = invoice.Rhash
+	result.PaymentRequest = invoice.Payreq
+	return result, nil
+}
+
+// CheckInvoice takes an invoice ID (LN node implementation specific) and checks if the corresponding invoice was settled.
+// An error is returned if the invoice info couldn't be fetched from Lightning Charge or deserialized etc.
+// False is returned if the invoice isn't settled.
+func (c ChargeClient) CheckInvoice(id string) (bool, error) {
+	stdOutLogger.Printf("Checking invoice %v\n", id)

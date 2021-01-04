@@ -75,3 +75,6 @@ func qrHandler(c *gin.Context) {
 			c.Abort()
 		} else {
 			c.Data(http.StatusOK, "image/png", qrBytes)
+		}
+	}
+}

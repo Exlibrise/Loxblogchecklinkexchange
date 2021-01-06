@@ -174,3 +174,13 @@ type chargeInvoice struct {
 	Metadata    interface{} `json:"metadata"`
 	Status      string      `json:"status"`
 }
+
+// deserializeInvoice converts an invoice JSON object to an instance of the chargeInvoice struct
+func deserializeInvoice(invoiceJSON []byte) (chargeInvoice, error) {
+	result := chargeInvoice{}
+	err := json.Unmarshal(invoiceJSON, &result)
+	if err != nil {
+		return result, err
+	}
+	return result, nil
+}

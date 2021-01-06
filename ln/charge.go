@@ -97,3 +97,26 @@ func (c ChargeClient) CheckInvoice(id string) (bool, error) {
 
 	if invoice.Status == "unpaid" {
 		return false, nil
+	} else if invoice.Status == "paid" {
+		// All checks for errors are done, return ok
+		return true, nil
+	} else {
+		// Unknown status
+		// TODO: Find out which statuses exist and handle them properly
+		return false, errors.New("The invoice found in Lightning Charge has an unknown / unhandled status")
+	}
+}
+
+// NewChargeClient creates a new ChargeClient instance.
+func NewChargeClient(chargeOptions ChargeOptions) (ChargeClient, error) {
+	result := ChargeClient{}
+
+	chargeOptions = assignChargeDefaultValues(chargeOptions)
+
+	result.client = http.DefaultClient
+	// Make sure the address doesn't end with "/", so that in the other functions
+	// we can rely on that it's ok to add for example "/invoice" to the baseURL.
+	result.baseURL = strings.TrimSuffix(chargeOptions.Address, "/")
+	result.apiToken = chargeOptions.APItoken
+
+	return result, nil

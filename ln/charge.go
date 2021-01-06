@@ -120,3 +120,24 @@ func NewChargeClient(chargeOptions ChargeOptions) (ChargeClient, error) {
 	result.apiToken = chargeOptions.APItoken
 
 	return result, nil
+}
+
+// ChargeOptions are the options for the connection to Lightning Charge.
+type ChargeOptions struct {
+	// Address of your Lightning Charge server, including the protocol (e.g. "https://") and port.
+	// Optional ("http://localhost:9112" by default).
+	Address string
+	// APItoken for authenticating the request to Lightning Charge.
+	// The token is configured when Lightning Charge is started.
+	APItoken string
+}
+
+// DefaultChargeOptions provides default values for ChargeOptions.
+var DefaultChargeOptions = ChargeOptions{
+	Address: "http://localhost:9112",
+}
+
+func assignChargeDefaultValues(chargeOptions ChargeOptions) ChargeOptions {
+	if chargeOptions.Address == "" {
+		chargeOptions.Address = DefaultChargeOptions.Address
+	}

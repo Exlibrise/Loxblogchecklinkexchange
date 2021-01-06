@@ -69,3 +69,31 @@ func (c ChargeClient) GenerateInvoice(amount int64, memo string) (Invoice, error
 // False is returned if the invoice isn't settled.
 func (c ChargeClient) CheckInvoice(id string) (bool, error) {
 	stdOutLogger.Printf("Checking invoice %v\n", id)
+
+	// Fetch invoice
+	req, err := http.NewRequest("GET", c.baseURL+"/invoice/"+id, nil)
+	if err != nil {
+		return false, err
+	}
+	req.SetBasicAuth("api-token", c.apiToken) // This might seem strange, but it's how Lightning Charge expects it
+	res, err := c.client.Do(req)
+	if err != nil {
+		return false, err
+	}
+
+	invoiceJSON, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		return false, err
+	}
+	err = res.Body.Close()
+	if err != nil {
+		return false, err
+	}
+
+	invoice, err := deserializeInvoice(invoiceJSON)
+	if err != nil {
+		return false, err
+	}
+
+	if invoice.Status == "unpaid" {
+		return false, nil

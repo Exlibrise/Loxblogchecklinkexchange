@@ -141,3 +141,36 @@ func assignChargeDefaultValues(chargeOptions ChargeOptions) ChargeOptions {
 	if chargeOptions.Address == "" {
 		chargeOptions.Address = DefaultChargeOptions.Address
 	}
+
+	return chargeOptions
+}
+
+// chargeInvoice is the Go data structure for the invoice JSON from Lightning Charge.
+//
+// Example JSON:
+// {
+//   "id": "4ya51ILHmKU6C8UjfEcnR",
+//   "msatoshi": "1000000",
+//   "description": "Lightning Charge Invoice",
+//   "rhash":
+//     "4bb443f021f20b9f57fd12c6c10fdf88252c0a1ae6fdeccfa3210b7b8190c464",
+//   "payreq":
+//     "lntb10u1pdegzmfpp5fw6y8upp7g9e74laztrvzr7l3qjjczs6um77enaryy9hhqvsc3jqdp8f35kw6r5de5kueeqgd5xzun8v5syjmnkda5kxegcqp2vagpefsetakat4erfvs2qk7nx28wa5nwa4ld0ewmhl99x6g8kj737xhpfwctx2vs0qqx38yu7td7u9rta4mx0xrdk4kstp29zvwmfhgp24rrx9",
+//   "expires_at": 1536432505,
+//   "created_at": 1536428905,
+//   "metadata": null,
+//   "status": "unpaid"
+// }
+//
+// Automatically converted via https://transform.now.sh/json-to-go/.
+type chargeInvoice struct {
+	ID          string      `json:"id"`
+	Msatoshi    string      `json:"msatoshi"`
+	Description string      `json:"description"`
+	Rhash       string      `json:"rhash"`
+	Payreq      string      `json:"payreq"`
+	ExpiresAt   int         `json:"expires_at"`
+	CreatedAt   int         `json:"created_at"`
+	Metadata    interface{} `json:"metadata"`
+	Status      string      `json:"status"`
+}

@@ -1,2 +1,2 @@
 /*
-Package ln c
+Package ln contains the Lightnin

@@ -1,2 +1,2 @@
 /*
-Package ln contains the Lightnin
+Package ln contains the Lightning Network-related code.

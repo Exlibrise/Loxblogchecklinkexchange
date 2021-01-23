@@ -7,4 +7,4 @@ import (
 	"os"
 )
 
-// std
+// stdOutLogger logs to stdout, wh

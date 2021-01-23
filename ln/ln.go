@@ -1,4 +1,5 @@
 package ln
 
 import (
-	"crypto
+	"crypto/sha256"
+	"encoding/hex

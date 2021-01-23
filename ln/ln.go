@@ -7,4 +7,4 @@ import (
 	"os"
 )
 
-// stdOutLogger logs to stdout, while the default log pa
+// stdOutLogger logs to stdout, while the default log package loggers log to stder

@@ -12,4 +12,4 @@ var stdOutLogger = log.New(os.Stdout, "", log.LstdFlags)
 
 // Invoice is a Lightning Network invoice and contains the typical invoice string and the payment hash.
 type Invoice struct {
-	
+	// The unique identifier for the

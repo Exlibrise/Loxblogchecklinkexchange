@@ -15,4 +15,4 @@ type Invoice struct {
 	// The unique identifier for the invoice in the LN node.
 	// The value depends on the LN node implementation.
 	//
-	// For exampl
+	// For example, lnd uses the payment hash (

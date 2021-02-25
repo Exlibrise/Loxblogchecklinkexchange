@@ -16,4 +16,4 @@ type Invoice struct {
 	// The value depends on the LN node implementation.
 	//
 	// For example, lnd uses the payment hash (a.k.a. preimage hash) as ID.
-	// It does
+	// It doesn't use this term ("ID"), bu

@@ -18,4 +18,5 @@ type Invoice struct {
 	// For example, lnd uses the payment hash (a.k.a. preimage hash) as ID.
 	// It doesn't use this term ("ID"), but when fetching a single invoice via RPC,
 	// the payment hash is used as identifier.
-	// Also, Lightning Lab's (creators of lnd) desktop app "Lightning" expli
+	// Also, Lightning Lab's (creators of lnd) desktop app "Lightning" explicitly shows
+	// the payment ha

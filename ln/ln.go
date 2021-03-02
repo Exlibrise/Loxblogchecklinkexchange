@@ -19,4 +19,4 @@ type Invoice struct {
 	// It doesn't use this term ("ID"), but when fetching a single invoice via RPC,
 	// the payment hash is used as identifier.
 	// Also, Lightning Lab's (creators of lnd) desktop app "Lightning" explicitly shows
-	// the payment ha
+	// the payment hash in a field with t

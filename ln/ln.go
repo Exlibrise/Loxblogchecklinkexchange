@@ -21,4 +21,4 @@ type Invoice struct {
 	// Also, Lightning Lab's (creators of lnd) desktop app "Lightning" explicitly shows
 	// the payment hash in a field with the title "invoice ID" in the Lightning transaction overview.
 	//
-	// But Lightning Cha
+	// But Lightning Charge on the other ha

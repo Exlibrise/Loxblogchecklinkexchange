@@ -19,4 +19,6 @@ type Invoice struct {
 	// It doesn't use this term ("ID"), but when fetching a single invoice via RPC,
 	// the payment hash is used as identifier.
 	// Also, Lightning Lab's (creators of lnd) desktop app "Lightning" explicitly shows
-	// the payment hash in a field with the title "invoice ID" in the Lightning transaction overv
+	// the payment hash in a field with the title "invoice ID" in the Lightning transaction overview.
+	//
+	// But Lightning Cha

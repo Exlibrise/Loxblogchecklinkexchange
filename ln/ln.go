@@ -22,4 +22,4 @@ type Invoice struct {
 	// the payment hash in a field with the title "invoice ID" in the Lightning transaction overview.
 	//
 	// But Lightning Charge on the other hand generates its own timestamp-based ID for each invoice.
-	// They explicitly call that value "invoice ID" and t
+	// They explicitly call that value "invoice ID" and they also require it when fet

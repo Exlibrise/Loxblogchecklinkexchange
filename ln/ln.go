@@ -23,4 +23,5 @@ type Invoice struct {
 	//
 	// But Lightning Charge on the other hand generates its own timestamp-based ID for each invoice.
 	// They explicitly call that value "invoice ID" and they also require it when fetching a single invoice
-	// via Lightning Char
+	// via Lightning Charge's RESTful API.
+	ImplDe

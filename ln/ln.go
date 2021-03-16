@@ -26,4 +26,4 @@ type Invoice struct {
 	// via Lightning Charge's RESTful API.
 	ImplDepID string
 	// A.k.a. preimage hash. Hex encoded.
-	// Could be ex
+	// Could be extracted from the Paymen

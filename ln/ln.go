@@ -25,4 +25,5 @@ type Invoice struct {
 	// They explicitly call that value "invoice ID" and they also require it when fetching a single invoice
 	// via Lightning Charge's RESTful API.
 	ImplDepID string
-	// A.k.a. preimage hash. H
+	// A.k.a. preimage hash. Hex encoded.
+	// Could be ex

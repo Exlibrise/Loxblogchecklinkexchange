@@ -27,4 +27,4 @@ type Invoice struct {
 	ImplDepID string
 	// A.k.a. preimage hash. Hex encoded.
 	// Could be extracted from the PaymentRequest, but that would require additional
-	// dependencies during bu
+	// dependencies during build time and additional computat

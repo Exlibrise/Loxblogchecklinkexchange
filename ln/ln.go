@@ -28,4 +28,4 @@ type Invoice struct {
 	// A.k.a. preimage hash. Hex encoded.
 	// Could be extracted from the PaymentRequest, but that would require additional
 	// dependencies during build time and additional computation during runtime,
-	// while all Lightning Node implem
+	// while all Lightning Node implementation clients already r

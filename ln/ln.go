@@ -29,4 +29,5 @@ type Invoice struct {
 	// Could be extracted from the PaymentRequest, but that would require additional
 	// dependencies during build time and additional computation during runtime,
 	// while all Lightning Node implementation clients already return the value directly
-	//
+	// when generating an invoice.
+	PaymentHa

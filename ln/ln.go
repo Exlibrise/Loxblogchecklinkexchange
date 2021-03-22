@@ -30,4 +30,5 @@ type Invoice struct {
 	// dependencies during build time and additional computation during runtime,
 	// while all Lightning Node implementation clients already return the value directly
 	// when generating an invoice.
-	PaymentHa
+	PaymentHash string
+	// The actual invoi

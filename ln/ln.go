@@ -31,4 +31,4 @@ type Invoice struct {
 	// while all Lightning Node implementation clients already return the value directly
 	// when generating an invoice.
 	PaymentHash string
-	// The actual invoi
+	// The actual invoice string required

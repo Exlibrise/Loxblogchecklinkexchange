@@ -31,4 +31,5 @@ type Invoice struct {
 	// while all Lightning Node implementation clients already return the value directly
 	// when generating an invoice.
 	PaymentHash string
-	// The actual invoice string required by the payer i
+	// The actual invoice string required by the payer in Bech32 encoding,
+	/

@@ -32,4 +32,5 @@ type Invoice struct {
 	// when generating an invoice.
 	PaymentHash string
 	// The actual invoice string required by the payer in Bech32 encoding,
-	// see https://github.com/lightningnetwork/lightning-rfc/blob/mas
+	// see https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md
+	P

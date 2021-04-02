@@ -36,4 +36,5 @@ type Invoice struct {
 	PaymentRequest string
 }
 
-// HashPreimage turns a hex encoded preimage into a hex encoded pre
+// HashPreimage turns a hex encoded preimage into a hex encoded preimage hash.
+// It's the same

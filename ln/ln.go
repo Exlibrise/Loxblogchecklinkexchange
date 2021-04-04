@@ -37,4 +37,4 @@ type Invoice struct {
 }
 
 // HashPreimage turns a hex encoded preimage into a hex encoded preimage hash.
-// It's the same format that's being used
+// It's the same format that's being used by "lncli listpayments", Ecla

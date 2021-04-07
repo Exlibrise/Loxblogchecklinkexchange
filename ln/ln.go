@@ -37,4 +37,4 @@ type Invoice struct {
 }
 
 // HashPreimage turns a hex encoded preimage into a hex encoded preimage hash.
-// It's the same format that's being used by "lncli listpayments", Eclair on Android and bo
+// It's the same format that's being used by "lncli listpayments", Eclair on Android and bolt11 payment request decoders l

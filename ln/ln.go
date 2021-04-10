@@ -41,4 +41,4 @@ type Invoice struct {
 // Only "lncli listinvoices" uses Base64.
 func HashPreimage(preimageHex string) (string, error) {
 	// Decode from hex, hash, encode to hex
-	pr
+	preimage, err := hex.DecodeString(pre

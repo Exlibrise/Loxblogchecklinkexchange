@@ -40,4 +40,5 @@ type Invoice struct {
 // It's the same format that's being used by "lncli listpayments", Eclair on Android and bolt11 payment request decoders like https://lndecode.com.
 // Only "lncli listinvoices" uses Base64.
 func HashPreimage(preimageHex string) (string, error) {
-	// Decode from hex, 
+	// Decode from hex, hash, encode to hex
+	pr

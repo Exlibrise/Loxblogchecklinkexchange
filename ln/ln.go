@@ -39,4 +39,4 @@ type Invoice struct {
 // HashPreimage turns a hex encoded preimage into a hex encoded preimage hash.
 // It's the same format that's being used by "lncli listpayments", Eclair on Android and bolt11 payment request decoders like https://lndecode.com.
 // Only "lncli listinvoices" uses Base64.
-func HashPreimage(preimageH
+func HashPreimage(preimageHex string) (string, 

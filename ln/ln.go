@@ -43,3 +43,5 @@ func HashPreimage(preimageHex string) (string, error) {
 	// Decode from hex, hash, encode to hex
 	preimage, err := hex.DecodeString(preimageHex)
 	if err != nil {
+		return "", err
+	}

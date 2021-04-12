@@ -45,4 +45,5 @@ func HashPreimage(preimageHex string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	hashByteArray := sha256.Sum256(prei
+	hashByteArray := sha256.Sum256(preimage)
+	preimageHashHex :

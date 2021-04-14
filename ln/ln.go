@@ -47,4 +47,5 @@ func HashPreimage(preimageHex string) (string, error) {
 	}
 	hashByteArray := sha256.Sum256(preimage)
 	preimageHashHex := hex.EncodeToString(hashByteArray[:])
-	return prei
+	return preimageHashHex, nil
+}

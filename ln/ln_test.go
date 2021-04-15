@@ -3,4 +3,5 @@ package ln_test
 import (
 	"testing"
 
-	"github.com/phili
+	"github.com/philippgille/ln-paywall/ln"
+)

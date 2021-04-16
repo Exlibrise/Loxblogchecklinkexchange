@@ -6,4 +6,4 @@ import (
 	"github.com/philippgille/ln-paywall/ln"
 )
 
-// TestHashPreimage tests 
+// TestHashPreimage tests if the result of the 

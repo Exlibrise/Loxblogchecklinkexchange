@@ -5,3 +5,5 @@ import (
 
 	"github.com/philippgille/ln-paywall/ln"
 )
+
+// TestHashPreimage tests 

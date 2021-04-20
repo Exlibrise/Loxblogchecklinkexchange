@@ -7,4 +7,4 @@ import (
 )
 
 // TestHashPreimage tests if the result of the HashPreimage function is correct.
-f
+func TestHashPreimage(t *

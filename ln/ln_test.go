@@ -8,4 +8,4 @@ import (
 
 // TestHashPreimage tests if the result of the HashPreimage function is correct.
 func TestHashPreimage(t *testing.T) {
-	// Correct preimage form, taken from a
+	// Correct preimage form, taken from a payment JSON in ln

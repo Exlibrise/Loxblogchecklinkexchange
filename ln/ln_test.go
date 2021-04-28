@@ -11,4 +11,4 @@ func TestHashPreimage(t *testing.T) {
 	// Correct preimage form, taken from a payment JSON in lnd
 	preimageHex := "119969c2338798cd56708126b5d6c0f6f5e75ed38da7a409b0081d94b4dacbf8"
 	// Taken from the same payment JSON in lnd
-	expected := "bf3e
+	expected := "bf3e0e73d4bb1ee9d68ca8d1078

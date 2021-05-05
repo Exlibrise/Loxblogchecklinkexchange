@@ -14,4 +14,5 @@ func TestHashPreimage(t *testing.T) {
 	expected := "bf3e0e73d4bb1ee9d68ca8d1078213d059e23d6e1c8a14b3df93faf87aa4fed3"
 	actual, err := ln.HashPreimage(preimageHex)
 	if err != nil {
-		t.Errorf("An error occ
+		t.Errorf("An error occurred during the test: %v\n", err)
+	}

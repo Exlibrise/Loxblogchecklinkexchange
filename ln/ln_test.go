@@ -17,4 +17,6 @@ func TestHashPreimage(t *testing.T) {
 		t.Errorf("An error occurred during the test: %v\n", err)
 	}
 	if actual != expected {
-		
+		t.Errorf("Expected %v, but was %v\n", expected, actual)
+	}
+}

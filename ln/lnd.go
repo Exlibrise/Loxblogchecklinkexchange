@@ -4,4 +4,6 @@ import (
 	"context"
 	"encoding/hex"
 	"errors"
-	"io/i
+	"io/ioutil"
+
+	"google.golang.org/g

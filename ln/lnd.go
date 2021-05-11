@@ -10,4 +10,7 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/ligh
+	"github.com/lightningnetwork/lnd/lnrpc"
+)
+
+/

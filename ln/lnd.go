@@ -13,4 +13,4 @@ import (
 	"github.com/lightningnetwork/lnd/lnrpc"
 )
 
-// LNDclient is an im
+// LNDclient is an implementation of the wall.

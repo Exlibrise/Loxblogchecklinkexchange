@@ -13,4 +13,5 @@ import (
 	"github.com/lightningnetwork/lnd/lnrpc"
 )
 
-// LNDclient is an implementation of the wall.LNClient and pay.LNClient inte
+// LNDclient is an implementation of the wall.LNClient and pay.LNClient interface
+// for the lnd

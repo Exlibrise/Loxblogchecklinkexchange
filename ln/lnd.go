@@ -14,4 +14,4 @@ import (
 )
 
 // LNDclient is an implementation of the wall.LNClient and pay.LNClient interface
-// for the lnd
+// for the lnd Lightning Network node im

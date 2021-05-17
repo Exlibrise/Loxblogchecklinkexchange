@@ -18,4 +18,7 @@ import (
 type LNDclient struct {
 	lndClient lnrpc.LightningClient
 	ctx       context.Context
-	conn      *grpc
+	conn      *grpc.ClientConn
+}
+
+// 

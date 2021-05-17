@@ -16,4 +16,5 @@ import (
 // LNDclient is an implementation of the wall.LNClient and pay.LNClient interface
 // for the lnd Lightning Network node implementation.
 type LNDclient struct {
-	lndClient lnrpc.Lightning
+	lndClient lnrpc.LightningClient
+	ctx       contex

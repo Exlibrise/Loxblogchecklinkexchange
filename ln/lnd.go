@@ -17,4 +17,5 @@ import (
 // for the lnd Lightning Network node implementation.
 type LNDclient struct {
 	lndClient lnrpc.LightningClient
-	ctx       contex
+	ctx       context.Context
+	conn      *grpc

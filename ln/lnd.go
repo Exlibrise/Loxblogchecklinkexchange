@@ -21,4 +21,4 @@ type LNDclient struct {
 	conn      *grpc.ClientConn
 }
 
-// 
+// GenerateInvoice generate

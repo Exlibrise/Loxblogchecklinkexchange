@@ -22,4 +22,5 @@ type LNDclient struct {
 }
 
 // GenerateInvoice generates an invoice with the given price and memo.
-func (c LNDclient) GenerateInvoice(amount int64, memo st
+func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
+	result

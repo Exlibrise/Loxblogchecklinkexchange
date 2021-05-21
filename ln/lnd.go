@@ -25,4 +25,5 @@ type LNDclient struct {
 func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
 	result := Invoice{}
 
-	// Create the request and sen
+	// Create the request and send it
+	invoice :

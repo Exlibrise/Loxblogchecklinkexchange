@@ -30,4 +30,4 @@ func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
 		Memo:  memo,
 		Value: amount,
 	}
-	stdOutL
+	stdOutLogger.Println("Creating invoice

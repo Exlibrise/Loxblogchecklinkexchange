@@ -28,3 +28,6 @@ func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
 	// Create the request and send it
 	invoice := lnrpc.Invoice{
 		Memo:  memo,
+		Value: amount,
+	}
+	stdOutL

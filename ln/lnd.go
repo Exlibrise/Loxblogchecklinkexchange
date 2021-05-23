@@ -30,4 +30,5 @@ func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
 		Memo:  memo,
 		Value: amount,
 	}
-	stdOutLogger.Println("Creating invoice for a new API requ
+	stdOutLogger.Println("Creating invoice for a new API request")
+	res, err := c

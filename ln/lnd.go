@@ -36,4 +36,4 @@ func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
 		return result, err
 	}
 
-	r
+	result.ImplDepID = hex.EncodeT

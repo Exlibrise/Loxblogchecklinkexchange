@@ -32,4 +32,8 @@ func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
 	}
 	stdOutLogger.Println("Creating invoice for a new API request")
 	res, err := c.lndClient.AddInvoice(c.ctx, &invoice)
-	if err != ni
+	if err != nil {
+		return result, err
+	}
+
+	r

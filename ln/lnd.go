@@ -42,4 +42,4 @@ func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
 	return result, nil
 }
 
-// CheckInvoice takes an invoice ID (LN node implementa
+// CheckInvoice takes an invoice ID (LN node implementation specific) and checks if th

@@ -44,4 +44,4 @@ func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
 
 // CheckInvoice takes an invoice ID (LN node implementation specific) and checks if the corresponding invoice was settled.
 // An error is returned if no corresponding invoice was found.
-// False is returne
+// False is returned if the invoice 

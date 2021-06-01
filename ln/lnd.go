@@ -46,4 +46,4 @@ func (c LNDclient) GenerateInvoice(amount int64, memo string) (Invoice, error) {
 // An error is returned if no corresponding invoice was found.
 // False is returned if the invoice isn't settled.
 func (c LNDclient) CheckInvoice(id string) (bool, error) {
-	// In 
+	// In the case of lnd, the ID i

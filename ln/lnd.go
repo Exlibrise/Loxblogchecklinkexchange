@@ -49,4 +49,7 @@ func (c LNDclient) CheckInvoice(id string) (bool, error) {
 	// In the case of lnd, the ID is the hex encoded preimage hash.
 	plainHash, err := hex.DecodeString(id)
 	if err != nil {
-		return f
+		return false, err
+	}
+
+	stdOutLogg

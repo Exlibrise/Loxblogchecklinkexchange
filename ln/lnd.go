@@ -52,4 +52,4 @@ func (c LNDclient) CheckInvoice(id string) (bool, error) {
 		return false, err
 	}
 
-	stdOutLogger.Printf("Checking in
+	stdOutLogger.Printf("Checking invoice for hash %v\n", id)

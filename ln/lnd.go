@@ -56,4 +56,5 @@ func (c LNDclient) CheckInvoice(id string) (bool, error) {
 
 	// Get the invoice for that hash
 	paymentHash := lnrpc.PaymentHash{
-		RHash: plainHas
+		RHash: plainHash,
+		// Hex encoded, must be exact

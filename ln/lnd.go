@@ -60,4 +60,4 @@ func (c LNDclient) CheckInvoice(id string) (bool, error) {
 		// Hex encoded, must be exactly 32 byte
 		RHashStr: id,
 	}
-	invoice, err := c.lndCli
+	invoice, err := c.lndClient.LookupInvoice(c.c

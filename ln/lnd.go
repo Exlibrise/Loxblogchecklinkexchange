@@ -65,4 +65,5 @@ func (c LNDclient) CheckInvoice(id string) (bool, error) {
 		return false, err
 	}
 
-	// Check 
+	// Check if invoice was settled
+	if !invoi

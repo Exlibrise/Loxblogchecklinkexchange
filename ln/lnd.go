@@ -62,4 +62,7 @@ func (c LNDclient) CheckInvoice(id string) (bool, error) {
 	}
 	invoice, err := c.lndClient.LookupInvoice(c.ctx, &paymentHash)
 	if err != nil {
-		return f
+		return false, err
+	}
+
+	// Check 

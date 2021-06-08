@@ -69,4 +69,7 @@ func (c LNDclient) CheckInvoice(id string) (bool, error) {
 	if !invoice.GetSettled() {
 		return false, nil
 	}
-	return true, n
+	return true, nil
+}
+
+// Pay pays the invoice 

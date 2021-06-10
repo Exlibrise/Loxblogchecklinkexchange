@@ -73,4 +73,5 @@ func (c LNDclient) CheckInvoice(id string) (bool, error) {
 }
 
 // Pay pays the invoice and returns the preimage (hex encoded) on success, or an error on failure.
-func (c LNDclient) Pay(invoice string) (string, erro
+func (c LNDclient) Pay(invoice string) (string, error) {
+	// Decode pay

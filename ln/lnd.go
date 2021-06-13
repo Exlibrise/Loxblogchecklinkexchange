@@ -76,4 +76,7 @@ func (c LNDclient) CheckInvoice(id string) (bool, error) {
 func (c LNDclient) Pay(invoice string) (string, error) {
 	// Decode payment request (a.k.a. invoice).
 	// TODO: Decoded values are only used for logging, so maybe make this optional to make fewer RPC calls
-	payReqString := lnrpc.PayReq
+	payReqString := lnrpc.PayReqString{
+		PayReq: invoice,
+	}
+	decoded

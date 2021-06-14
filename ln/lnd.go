@@ -79,4 +79,5 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 	payReqString := lnrpc.PayReqString{
 		PayReq: invoice,
 	}
-	decodedPayReq, err := c.lndClient.Decode
+	decodedPayReq, err := c.lndClient.DecodePayReq(c.ctx, &payReqString)
+	if err

@@ -80,4 +80,5 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 		PayReq: invoice,
 	}
 	decodedPayReq, err := c.lndClient.DecodePayReq(c.ctx, &payReqString)
-	if err
+	if err != nil {
+		return "", e

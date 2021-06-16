@@ -86,4 +86,6 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 
 	// Send payment
 	sendReq := lnrpc.SendRequest{
-		PaymentReque
+		PaymentRequest: invoice,
+	}
+	stdOutL

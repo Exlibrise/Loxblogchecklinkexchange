@@ -89,4 +89,5 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 		PaymentRequest: invoice,
 	}
 	stdOutLogger.Printf("Sending payment with %v Satoshis to %v (memo: \"%v\")",
-		decodedPayReq.NumSatoshis, decodedPayReq.Destination, decodedPayReq.Desc
+		decodedPayReq.NumSatoshis, decodedPayReq.Destination, decodedPayReq.Description)
+	sendRes, err := c.lnd

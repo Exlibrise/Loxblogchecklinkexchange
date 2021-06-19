@@ -94,4 +94,4 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	// Ev
+	// Even if err is nil, this just 

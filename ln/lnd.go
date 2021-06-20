@@ -94,4 +94,4 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	// Even if err is nil, this just means the RPC call was succ
+	// Even if err is nil, this just means the RPC call was successful, not the paymen

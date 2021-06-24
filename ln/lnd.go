@@ -99,4 +99,4 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 		return "", errors.New(sendRes.PaymentError)
 	}
 
-	hexPreimage := hex.EncodeToS
+	hexPreimage := hex.EncodeToString(sendRes.PaymentPreima

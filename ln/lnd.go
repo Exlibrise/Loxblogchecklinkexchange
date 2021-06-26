@@ -103,4 +103,5 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 	return string(hexPreimage), nil
 }
 
-// NewLNDclient creates a new LN
+// NewLNDclient creates a new LNDclient instance.
+func N

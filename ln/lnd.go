@@ -104,4 +104,4 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 }
 
 // NewLNDclient creates a new LNDclient instance.
-func NewLNDclient(lndOptions LNDoptions
+func NewLNDclient(lndOptions LNDoptions) (LNDclient, error)

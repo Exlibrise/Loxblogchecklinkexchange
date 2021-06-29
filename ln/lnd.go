@@ -107,4 +107,6 @@ func (c LNDclient) Pay(invoice string) (string, error) {
 func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	result := LNDclient{}
 
-	lndOptions = assignLNDdefaultValues
+	lndOptions = assignLNDdefaultValues(lndOptions)
+
+	// Set up

@@ -109,4 +109,4 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 
 	lndOptions = assignLNDdefaultValues(lndOptions)
 
-	// Set up
+	// Set up a connection to the server.

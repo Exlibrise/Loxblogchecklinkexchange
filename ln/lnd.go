@@ -110,4 +110,5 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	lndOptions = assignLNDdefaultValues(lndOptions)
 
 	// Set up a connection to the server.
-	creds, err := credentials.NewClientTLSFromFile(lndOptions.
+	creds, err := credentials.NewClientTLSFromFile(lndOptions.CertFile, "")
+	if err 

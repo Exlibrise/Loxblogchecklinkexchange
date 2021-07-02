@@ -111,4 +111,5 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 
 	// Set up a connection to the server.
 	creds, err := credentials.NewClientTLSFromFile(lndOptions.CertFile, "")
-	if err 
+	if err != nil {
+		return result, err

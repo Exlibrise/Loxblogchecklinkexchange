@@ -113,3 +113,5 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	creds, err := credentials.NewClientTLSFromFile(lndOptions.CertFile, "")
 	if err != nil {
 		return result, err
+	}
+	conn, err := grpc

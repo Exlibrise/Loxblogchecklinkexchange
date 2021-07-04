@@ -114,4 +114,4 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	if err != nil {
 		return result, err
 	}
-	conn, err := grpc
+	conn, err := grpc.Dial(lndOptions.Addr

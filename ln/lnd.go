@@ -116,4 +116,6 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	}
 	conn, err := grpc.Dial(lndOptions.Address, grpc.WithTransportCredentials(creds))
 	if err != nil {
-		return re
+		return result, err
+	}
+	c := lnrpc.NewLi

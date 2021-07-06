@@ -118,4 +118,6 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	if err != nil {
 		return result, err
 	}
-	c := lnrpc.NewLi
+	c := lnrpc.NewLightningClient(conn)
+
+	// Add th

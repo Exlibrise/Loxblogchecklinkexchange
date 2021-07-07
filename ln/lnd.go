@@ -120,4 +120,4 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	}
 	c := lnrpc.NewLightningClient(conn)
 
-	// Add th
+	// Add the macaroon to the outgoing

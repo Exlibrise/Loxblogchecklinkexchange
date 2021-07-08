@@ -122,4 +122,6 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 
 	// Add the macaroon to the outgoing context
 
-	macaroon, err := ioutil.ReadFile(lndOptions.MacaroonFil
+	macaroon, err := ioutil.ReadFile(lndOptions.MacaroonFile)
+	if err != nil {
+		r

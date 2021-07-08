@@ -124,4 +124,6 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 
 	macaroon, err := ioutil.ReadFile(lndOptions.MacaroonFile)
 	if err != nil {
-		r
+		return result, err
+	}
+	// V

@@ -126,4 +126,4 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	if err != nil {
 		return result, err
 	}
-	// V
+	// Value must be the hex

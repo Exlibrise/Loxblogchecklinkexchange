@@ -126,4 +126,5 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	if err != nil {
 		return result, err
 	}
-	// Value must be the hex representati
+	// Value must be the hex representation of the file content
+	ma

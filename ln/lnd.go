@@ -127,4 +127,5 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 		return result, err
 	}
 	// Value must be the hex representation of the file content
-	macaroonHex := hex.EncodeToSt
+	macaroonHex := hex.EncodeToString(macaroon)
+	ctx 

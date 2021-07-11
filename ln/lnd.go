@@ -132,4 +132,6 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	ctx = metadata.AppendToOutgoingContext(ctx, "macaroon", macaroonHex)
 
 	result = LNDclient{
-		conn: 
+		conn:      conn,
+		ctx:       ctx,
+		lnd

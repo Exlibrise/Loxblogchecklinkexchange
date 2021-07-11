@@ -129,4 +129,4 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	// Value must be the hex representation of the file content
 	macaroonHex := hex.EncodeToString(macaroon)
 	ctx := context.Background()
-	ctx = metadata.Appe
+	ctx = metadata.AppendToOutgoingContext(ctx, "m

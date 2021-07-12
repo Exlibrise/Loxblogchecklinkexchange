@@ -134,4 +134,7 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	result = LNDclient{
 		conn:      conn,
 		ctx:       ctx,
-		lnd
+		lndClient: c,
+	}
+
+	return

@@ -137,4 +137,7 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 		lndClient: c,
 	}
 
-	return
+	return result, nil
+}
+
+// LN

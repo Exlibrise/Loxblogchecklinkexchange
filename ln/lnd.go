@@ -140,4 +140,4 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	return result, nil
 }
 
-// LNDoptions are the opti
+// LNDoptions are the options for the connectio

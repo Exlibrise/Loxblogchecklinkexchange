@@ -140,4 +140,5 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 	return result, nil
 }
 
-// LNDoptions are the options for the connectio
+// LNDoptions are the options for the connection to the lnd node.
+type 

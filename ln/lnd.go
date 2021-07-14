@@ -144,4 +144,5 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 type LNDoptions struct {
 	// Address of your LND node, including the port.
 	// Optional ("localhost:10009" by default).
-	Add
+	Address string
+	// Path to the "tls

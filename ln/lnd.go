@@ -143,4 +143,5 @@ func NewLNDclient(lndOptions LNDoptions) (LNDclient, error) {
 // LNDoptions are the options for the connection to the lnd node.
 type LNDoptions struct {
 	// Address of your LND node, including the port.
-	// Optional ("localhost:1
+	// Optional ("localhost:10009" by default).
+	Add

@@ -145,4 +145,4 @@ type LNDoptions struct {
 	// Address of your LND node, including the port.
 	// Optional ("localhost:10009" by default).
 	Address string
-	// Path to the "tls
+	// Path to the "tls.cert" file that your 

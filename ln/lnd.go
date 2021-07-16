@@ -147,4 +147,5 @@ type LNDoptions struct {
 	Address string
 	// Path to the "tls.cert" file that your LND node uses.
 	// Optional ("tls.cert" by default).
-	Cert
+	CertFile string
+	// Path to the m

@@ -148,4 +148,5 @@ type LNDoptions struct {
 	// Path to the "tls.cert" file that your LND node uses.
 	// Optional ("tls.cert" by default).
 	CertFile string
-	// Path to the macaroon file that your LND
+	// Path to the macaroon file that your LND node uses.
+	// "invoice.macaroon" 

@@ -150,4 +150,5 @@ type LNDoptions struct {
 	CertFile string
 	// Path to the macaroon file that your LND node uses.
 	// "invoice.macaroon" if you only use the GenerateInvoice() and CheckInvoice() methods
-	// (required by the middleware in the package "wall"
+	// (required by the middleware in the package "wall").
+	// "admin.macaroon" i

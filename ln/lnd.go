@@ -152,4 +152,5 @@ type LNDoptions struct {
 	// "invoice.macaroon" if you only use the GenerateInvoice() and CheckInvoice() methods
 	// (required by the middleware in the package "wall").
 	// "admin.macaroon" if you use the Pay() method (required by the client in the package "pay").
-	// Optional ("invoic
+	// Optional ("invoice.macaroon" by default).
+	Macaroon

@@ -153,4 +153,7 @@ type LNDoptions struct {
 	// (required by the middleware in the package "wall").
 	// "admin.macaroon" if you use the Pay() method (required by the client in the package "pay").
 	// Optional ("invoice.macaroon" by default).
-	Macaroon
+	MacaroonFile string
+}
+
+// DefaultL

@@ -156,4 +156,4 @@ type LNDoptions struct {
 	MacaroonFile string
 }
 
-// DefaultLNDoptions provides defau
+// DefaultLNDoptions provides default values for LNDoptions.

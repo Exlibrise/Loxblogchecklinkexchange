@@ -157,3 +157,4 @@ type LNDoptions struct {
 }
 
 // DefaultLNDoptions provides default values for LNDoptions.
+var DefaultLNDoptions = 

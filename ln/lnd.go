@@ -158,4 +158,5 @@ type LNDoptions struct {
 
 // DefaultLNDoptions provides default values for LNDoptions.
 var DefaultLNDoptions = LNDoptions{
-	Address:      
+	Address:      "localhost:10009",
+	CertFil

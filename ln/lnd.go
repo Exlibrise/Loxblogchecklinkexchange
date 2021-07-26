@@ -160,4 +160,7 @@ type LNDoptions struct {
 var DefaultLNDoptions = LNDoptions{
 	Address:      "localhost:10009",
 	CertFile:     "tls.cert",
-	MacaroonFile: "invoice.macaroo
+	MacaroonFile: "invoice.macaroon",
+}
+
+func assignLNDdefaultValues(l

@@ -163,4 +163,6 @@ var DefaultLNDoptions = LNDoptions{
 	MacaroonFile: "invoice.macaroon",
 }
 
-func assignLNDdefaultValues(lndOptions LNDoptions) LNDop
+func assignLNDdefaultValues(lndOptions LNDoptions) LNDoptions {
+	// LNDoptions
+	if ln

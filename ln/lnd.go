@@ -166,4 +166,6 @@ var DefaultLNDoptions = LNDoptions{
 func assignLNDdefaultValues(lndOptions LNDoptions) LNDoptions {
 	// LNDoptions
 	if lndOptions.Address == "" {
-		lndOptions.Address = DefaultLNDoptions
+		lndOptions.Address = DefaultLNDoptions.Address
+	}
+	if lndOpt

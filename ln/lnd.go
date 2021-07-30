@@ -169,4 +169,4 @@ func assignLNDdefaultValues(lndOptions LNDoptions) LNDoptions {
 		lndOptions.Address = DefaultLNDoptions.Address
 	}
 	if lndOptions.CertFile == "" {
-		lndOptions.CertF
+		lndOptions.CertFile = DefaultLNDoptions.CertF

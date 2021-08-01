@@ -171,4 +171,5 @@ func assignLNDdefaultValues(lndOptions LNDoptions) LNDoptions {
 	if lndOptions.CertFile == "" {
 		lndOptions.CertFile = DefaultLNDoptions.CertFile
 	}
-	if lndOptions
+	if lndOptions.MacaroonFile == "" {
+		lndOption

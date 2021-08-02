@@ -175,4 +175,5 @@ func assignLNDdefaultValues(lndOptions LNDoptions) LNDoptions {
 		lndOptions.MacaroonFile = DefaultLNDoptions.MacaroonFile
 	}
 
-	re
+	return lndOptions
+}

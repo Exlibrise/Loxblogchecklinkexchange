@@ -3,4 +3,8 @@ Package pay contains the client-side functionality for easy use of APIs that are
 
 Usage
 
-	packa
+	package main
+
+	import (
+		"fmt"
+	

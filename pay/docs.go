@@ -9,4 +9,4 @@ Usage
 		"fmt"
 		"io/ioutil"
 
-		"github.c
+		"github.com/philippgille/ln-pay

@@ -9,4 +9,5 @@ Usage
 		"fmt"
 		"io/ioutil"
 
-		"github.com/philippgille/ln-pay
+		"github.com/philippgille/ln-paywall/ln"
+		"github.com/

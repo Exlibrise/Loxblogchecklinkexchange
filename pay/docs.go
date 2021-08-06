@@ -7,4 +7,6 @@ Usage
 
 	import (
 		"fmt"
-	
+		"io/ioutil"
+
+		"github.c

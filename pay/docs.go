@@ -10,4 +10,4 @@ Usage
 		"io/ioutil"
 
 		"github.com/philippgille/ln-paywall/ln"
-		"github.com/
+		"github.com/philippgille/ln-paywall

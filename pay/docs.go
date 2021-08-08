@@ -10,4 +10,7 @@ Usage
 		"io/ioutil"
 
 		"github.com/philippgille/ln-paywall/ln"
-		"github.com/philippgille/ln-paywall
+		"github.com/philippgille/ln-paywall/pay"
+	)
+
+	func main() {

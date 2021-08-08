@@ -14,3 +14,5 @@ Usage
 	)
 
 	func main() {
+		// Set up client
+		

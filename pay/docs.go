@@ -15,4 +15,4 @@ Usage
 
 	func main() {
 		// Set up client
-		lndOptions := ln.LNDopt
+		lndOptions := ln.LNDoptions{ // Default address: 

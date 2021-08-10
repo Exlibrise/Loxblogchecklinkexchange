@@ -15,4 +15,4 @@ Usage
 
 	func main() {
 		// Set up client
-		lndOptions := ln.LNDoptions{ // Default address: 
+		lndOptions := ln.LNDoptions{ // Default address: "localhost:10009", CertFile: "

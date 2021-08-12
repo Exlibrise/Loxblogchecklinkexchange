@@ -18,4 +18,5 @@ Usage
 		lndOptions := ln.LNDoptions{ // Default address: "localhost:10009", CertFile: "tls.cert"
 			MacaroonFile: "admin.macaroon", // admin.macaroon is required for making payments
 		}
-		lnClient, err := ln.NewLNDclient(lndO
+		lnClient, err := ln.NewLNDclient(lndOptions)
+		if err != nil

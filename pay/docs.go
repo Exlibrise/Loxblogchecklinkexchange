@@ -24,4 +24,4 @@ Usage
 		}
 		client := pay.NewClient(nil, lnClient) // Uses http.DefaultClient if no http.Client is passed
 
-		// Send requ
+		// Send request to an ln-paywal

@@ -22,4 +22,4 @@ Usage
 		if err != nil {
 			panic(err)
 		}
-		client := pay.NewClient(nil, lnClient) // Use
+		client := pay.NewClient(nil, lnClient) // Uses http.DefaultClient if no ht

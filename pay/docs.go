@@ -24,4 +24,5 @@ Usage
 		}
 		client := pay.NewClient(nil, lnClient) // Uses http.DefaultClient if no http.Client is passed
 
-		// Send request to an ln-paywal
+		// Send request to an ln-paywalled API
+		res, err := cli

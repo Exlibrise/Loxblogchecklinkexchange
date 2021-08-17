@@ -31,4 +31,5 @@ Usage
 		}
 		defer res.Body.Close()
 
-		// Pr
+		// Print response body
+		res

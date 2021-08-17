@@ -29,4 +29,6 @@ Usage
 		if err != nil {
 			panic(err)
 		}
-		defer
+		defer res.Body.Close()
+
+		// Pr

@@ -27,4 +27,6 @@ Usage
 		// Send request to an ln-paywalled API
 		res, err := client.Get("http://localhost:8080/ping")
 		if err != nil {
-		
+			panic(err)
+		}
+		defer

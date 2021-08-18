@@ -32,4 +32,4 @@ Usage
 		defer res.Body.Close()
 
 		// Print response body
-		res
+		resBody, err := ioutil.ReadAll

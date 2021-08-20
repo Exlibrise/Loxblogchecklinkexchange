@@ -35,4 +35,5 @@ Usage
 		resBody, err := ioutil.ReadAll(res.Body)
 		if err != nil {
 			panic(err)
-	
+		}
+		fmt.Println(

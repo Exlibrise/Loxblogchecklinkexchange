@@ -36,4 +36,8 @@ Usage
 		if err != nil {
 			panic(err)
 		}
-		fmt.Println(
+		fmt.Println(string(resBody))
+	}
+
+*/
+package 

@@ -6,4 +6,4 @@ import (
 	"net/http"
 )
 
-// LNclient
+// LNclient is the abstraction of 

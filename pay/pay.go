@@ -6,4 +6,4 @@ import (
 	"net/http"
 )
 
-// LNclient is the abstraction of 
+// LNclient is the abstraction of a Lightning Network nod

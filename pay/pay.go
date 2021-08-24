@@ -11,3 +11,5 @@ type LNclient interface {
 	// Pay pays the invoice and returns the preimage on success, or an error on failure.
 	Pay(invoice string) (string, error)
 }
+
+// Client is an HTTP cli

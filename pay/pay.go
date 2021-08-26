@@ -13,4 +13,4 @@ type LNclient interface {
 }
 
 // Client is an HTTP client, which handles "Payment Required" interruptions transparently.
-// It
+// It must be initially set up with 

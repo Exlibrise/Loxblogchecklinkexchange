@@ -12,4 +12,5 @@ type LNclient interface {
 	Pay(invoice string) (string, error)
 }
 
-// Client is an HTTP client, which handles "Payment Required" interru
+// Client is an HTTP client, which handles "Payment Required" interruptions transparently.
+// It

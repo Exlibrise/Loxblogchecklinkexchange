@@ -13,4 +13,5 @@ type LNclient interface {
 }
 
 // Client is an HTTP client, which handles "Payment Required" interruptions transparently.
-// It must be initially set up with a connection the Lightning Network node that should handle the paymen
+// It must be initially set up with a connection the Lightning Network node that should handle the payments
+// and from then on

@@ -16,4 +16,4 @@ type LNclient interface {
 // It must be initially set up with a connection the Lightning Network node that should handle the payments
 // and from then on it's meant to be used as an alternative to the "net/http.Client".
 // The calling code only needs to call the Do(...) method once, instead of handling
-// "402 Paymen
+// "402 Payment Required" responses and re-sending

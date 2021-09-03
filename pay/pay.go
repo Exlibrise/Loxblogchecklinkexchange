@@ -17,4 +17,6 @@ type LNclient interface {
 // and from then on it's meant to be used as an alternative to the "net/http.Client".
 // The calling code only needs to call the Do(...) method once, instead of handling
 // "402 Payment Required" responses and re-sending the original request after payment.
-type Client str
+type Client struct {
+	c *http.Client
+	l 

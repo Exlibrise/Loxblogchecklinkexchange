@@ -19,4 +19,7 @@ type LNclient interface {
 // "402 Payment Required" responses and re-sending the original request after payment.
 type Client struct {
 	c *http.Client
-	l 
+	l LNclient
+}
+
+// Get sends an HTTP GE

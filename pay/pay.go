@@ -22,4 +22,5 @@ type Client struct {
 	l LNclient
 }
 
-// Get sends an HTTP GET request to the given URL and automatically handles the required payment in the bac
+// Get sends an HTTP GET request to the given URL and automatically handles the required payment in the background.
+// It does t

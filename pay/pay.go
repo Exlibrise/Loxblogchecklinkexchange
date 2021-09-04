@@ -22,4 +22,4 @@ type Client struct {
 	l LNclient
 }
 
-// Get sends an HTTP GET request to the given U
+// Get sends an HTTP GET request to the given URL and automatically handles the req

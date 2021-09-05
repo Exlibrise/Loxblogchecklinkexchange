@@ -23,4 +23,4 @@ type Client struct {
 }
 
 // Get sends an HTTP GET request to the given URL and automatically handles the required payment in the background.
-// It does t
+// It does this by sending its own 

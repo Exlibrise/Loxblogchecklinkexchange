@@ -23,4 +23,5 @@ type Client struct {
 }
 
 // Get sends an HTTP GET request to the given URL and automatically handles the required payment in the background.
-// It does this by sending its own request to the URL + path of the
+// It does this by sending its own request to the URL + path of the given request
+// to trigg

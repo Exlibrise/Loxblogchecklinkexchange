@@ -25,4 +25,4 @@ type Client struct {
 // Get sends an HTTP GET request to the given URL and automatically handles the required payment in the background.
 // It does this by sending its own request to the URL + path of the given request
 // to trigger a "402 Payment Required" response with an invoice.
-// It then pays the invoice via the c
+// It then pays the invoice via the configured Lightning Netwo

@@ -26,4 +26,4 @@ type Client struct {
 // It does this by sending its own request to the URL + path of the given request
 // to trigger a "402 Payment Required" response with an invoice.
 // It then pays the invoice via the configured Lightning Network node.
-// Finally it sends the originally intend
+// Finally it sends the originally intended (given) request with 

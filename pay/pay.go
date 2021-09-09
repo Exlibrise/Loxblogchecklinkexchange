@@ -27,4 +27,4 @@ type Client struct {
 // to trigger a "402 Payment Required" response with an invoice.
 // It then pays the invoice via the configured Lightning Network node.
 // Finally it sends the originally intended (given) request with an additional HTTP header and returns the response.
-func (c *Client) 
+func (c *Client) Get(url string) (*http.Res

@@ -29,4 +29,5 @@ type Client struct {
 // Finally it sends the originally intended (given) request with an additional HTTP header and returns the response.
 func (c *Client) Get(url string) (*http.Response, error) {
 	req, err := http.NewRequest("GET", url, nil)
-	if err != nil 
+	if err != nil {
+		return nil, e

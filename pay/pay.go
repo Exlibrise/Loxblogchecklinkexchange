@@ -30,4 +30,7 @@ type Client struct {
 func (c *Client) Get(url string) (*http.Response, error) {
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		return nil, e
+		return nil, err
+	}
+	return c.Do(req)
+}

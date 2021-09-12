@@ -35,4 +35,4 @@ func (c *Client) Get(url string) (*http.Response, error) {
 	return c.Do(req)
 }
 
-// Do sends the given request and automatically han
+// Do sends the given request and automatically handles the required paymen

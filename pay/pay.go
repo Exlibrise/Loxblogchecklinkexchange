@@ -37,4 +37,5 @@ func (c *Client) Get(url string) (*http.Response, error) {
 
 // Do sends the given request and automatically handles the required payment in the background.
 // It does this by sending its own request to the URL + path of the given request
-// to trigger a "402 Payment Required" response with
+// to trigger a "402 Payment Required" response with an invoice.
+// It then pa

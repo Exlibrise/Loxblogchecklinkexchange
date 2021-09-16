@@ -38,4 +38,5 @@ func (c *Client) Get(url string) (*http.Response, error) {
 // Do sends the given request and automatically handles the required payment in the background.
 // It does this by sending its own request to the URL + path of the given request
 // to trigger a "402 Payment Required" response with an invoice.
-// It then pays the invoice via the configured Lightning Netwo
+// It then pays the invoice via the configured Lightning Network node.
+// Finally it sends

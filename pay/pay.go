@@ -43,4 +43,4 @@ func (c *Client) Get(url string) (*http.Response, error) {
 func (c *Client) Do(req *http.Request) (*http.Response, error) {
 	// Send first request, no data (query params or body) required
 
-	inv
+	invoiceReq, err := http.NewReques

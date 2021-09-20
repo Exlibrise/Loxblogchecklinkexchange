@@ -41,4 +41,4 @@ func (c *Client) Get(url string) (*http.Response, error) {
 // It then pays the invoice via the configured Lightning Network node.
 // Finally it sends the originally intended (given) request with an additional HTTP header and returns the response.
 func (c *Client) Do(req *http.Request) (*http.Response, error) {
-	// Send first req
+	// Send first request, no data (query pa

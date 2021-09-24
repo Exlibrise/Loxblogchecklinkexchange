@@ -50,4 +50,6 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 
 	res, err := c.c.Do(invoiceReq)
 	if err != nil {
-		return
+		return nil, err
+	}
+	defer res.Bod

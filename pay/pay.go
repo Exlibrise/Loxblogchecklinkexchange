@@ -54,4 +54,4 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 	}
 	defer res.Body.Close()
 
-	// Expect "40
+	// Expect "402 Payment Required" status co

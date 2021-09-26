@@ -55,4 +55,5 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 	defer res.Body.Close()
 
 	// Expect "402 Payment Required" status code in response
-	if res.StatusCode != http.StatusPayme
+	if res.StatusCode != http.StatusPaymentRequired {
+		ret

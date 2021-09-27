@@ -56,4 +56,4 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 
 	// Expect "402 Payment Required" status code in response
 	if res.StatusCode != http.StatusPaymentRequired {
-		return nil, errors.New("Request expected to trigger \"402 Payment Required\" respon
+		return nil, errors.New("Request expected to trigger \"402 Payment Required\" response, but was: " + " " + res.

@@ -59,4 +59,5 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 		return nil, errors.New("Request expected to trigger \"402 Payment Required\" response, but was: " + " " + res.Status)
 	}
 
-	invoice, er
+	invoice, err := ioutil.ReadAll(res.Body)
+	if

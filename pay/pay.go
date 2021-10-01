@@ -62,3 +62,7 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 	invoice, err := ioutil.ReadAll(res.Body)
 	if err != nil {
 		return nil, err
+	}
+
+	// Pay invoice
+	hexP

@@ -66,4 +66,8 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 
 	// Pay invoice
 	hexPreimage, err := c.l.Pay(string(invoice))
-	if err != nil 
+	if err != nil {
+		return nil, err
+	}
+
+	// A

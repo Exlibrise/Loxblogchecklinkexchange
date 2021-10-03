@@ -70,4 +70,4 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 		return nil, err
 	}
 
-	// Add preimage to the 
+	// Add preimage to the original request's head

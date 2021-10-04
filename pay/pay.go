@@ -78,4 +78,4 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 }
 
 // NewClient creates a new pay.Client instance.
-// Yo
+// You can pass nil as ht

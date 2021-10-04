@@ -73,4 +73,5 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 	// Add preimage to the original request's headers
 	req.Header.Add("X-Preimage", hexPreimage)
 
-	// Send original request an
+	// Send original request and return response or error
+	re

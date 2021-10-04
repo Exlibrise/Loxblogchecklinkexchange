@@ -77,4 +77,5 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 	return c.c.Do(req)
 }
 
-// NewCli
+// NewClient creates a new pay.Client instance.
+// Yo

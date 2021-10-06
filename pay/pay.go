@@ -81,4 +81,5 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 // You can pass nil as httpClient, in which case the http.DefaultClient will be used.
 func NewClient(httpClient *http.Client, lnClient LNclient) Client {
 	if httpClient == nil {
-		httpClient =
+		httpClient = http.DefaultClient
+	}

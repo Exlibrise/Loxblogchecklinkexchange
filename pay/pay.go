@@ -80,4 +80,5 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 // NewClient creates a new pay.Client instance.
 // You can pass nil as httpClient, in which case the http.DefaultClient will be used.
 func NewClient(httpClient *http.Client, lnClient LNclient) Client {
-	if httpClient 
+	if httpClient == nil {
+		httpClient =

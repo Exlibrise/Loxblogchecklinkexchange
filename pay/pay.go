@@ -83,3 +83,5 @@ func NewClient(httpClient *http.Client, lnClient LNclient) Client {
 	if httpClient == nil {
 		httpClient = http.DefaultClient
 	}
+	return Client{
+		c: ht

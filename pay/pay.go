@@ -84,4 +84,7 @@ func NewClient(httpClient *http.Client, lnClient LNclient) Client {
 		httpClient = http.DefaultClient
 	}
 	return Client{
-		c: ht
+		c: httpClient,
+		l: lnClient,
+	}
+}

@@ -91,3 +91,32 @@ var DefaultBoltOptions = BoltOptions{
 //
 // Don't worry about closing the Bolt DB, the middleware opens it once and uses it for the duration of its lifetime.
 // When the web service is stopped, the DB file lock is released automatically.
+func NewBoltClient(boltOptions BoltOptions) (BoltClient, error) {
+	result := BoltClient{}
+
+	// Set default values
+	if boltOptions.Path == "" {
+		boltOptions.Path = DefaultBoltOptions.Path
+	}
+
+	// Open DB
+	db, err := bolt.Open(boltOptions.Path, 0600, nil)
+	if err != nil {
+		return result, err
+	}
+
+	// Create a bucket if it doesn't exist yet.
+	// In Bolt key/value pairs are stored to and read from buckets.
+	err = db.Update(func(tx *bolt.Tx) error {
+		_, err := tx.CreateBucketIfNotExists([]byte(bucketName))
+		if err != nil {
+			return err
+		}
+		return nil
+	})
+	if err != nil {
+		return result, err
+	}
+
+	result = BoltClient{
+		db:   db,

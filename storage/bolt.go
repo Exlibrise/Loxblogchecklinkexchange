@@ -120,3 +120,8 @@ func NewBoltClient(boltOptions BoltOptions) (BoltClient, error) {
 
 	result = BoltClient{
 		db:   db,
+		lock: &sync.Mutex{},
+	}
+
+	return result, nil
+}

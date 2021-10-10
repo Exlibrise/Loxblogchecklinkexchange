@@ -7,4 +7,5 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/philippgille/
+	"github.com/philippgille/ln-paywall/ln"
+	"github.com/p

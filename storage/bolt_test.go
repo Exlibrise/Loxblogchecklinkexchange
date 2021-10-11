@@ -8,4 +8,4 @@ import (
 	"testing"
 
 	"github.com/philippgille/ln-paywall/ln"
-	"github.com/p
+	"github.com/philippgille/ln-paywall/sto

@@ -12,4 +12,4 @@ import (
 	"github.com/philippgille/ln-paywall/wall"
 )
 
-//
+// TestBoltClientImpl tests if th

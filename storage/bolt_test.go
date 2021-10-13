@@ -12,4 +12,4 @@ import (
 	"github.com/philippgille/ln-paywall/wall"
 )
 
-// TestBoltClientImpl tests if the BoltClient struct imp
+// TestBoltClientImpl tests if the BoltClient struct implements the StorageClient in

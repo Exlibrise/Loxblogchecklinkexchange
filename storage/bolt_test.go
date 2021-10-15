@@ -13,4 +13,5 @@ import (
 )
 
 // TestBoltClientImpl tests if the BoltClient struct implements the StorageClient interface.
-// This doesn't happen at runtime, but at co
+// This doesn't happen at runtime, but at compile time.
+func TestBoltClientImpl

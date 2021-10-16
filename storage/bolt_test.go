@@ -14,4 +14,5 @@ import (
 
 // TestBoltClientImpl tests if the BoltClient struct implements the StorageClient interface.
 // This doesn't happen at runtime, but at compile time.
-func TestBoltClientImpl
+func TestBoltClientImpl(t *testing.T) {
+	t.SkipNow()

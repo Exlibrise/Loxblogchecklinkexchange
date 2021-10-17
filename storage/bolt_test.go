@@ -16,4 +16,5 @@ import (
 // This doesn't happen at runtime, but at compile time.
 func TestBoltClientImpl(t *testing.T) {
 	t.SkipNow()
-	invoiceOptions := wall.Invoi
+	invoiceOptions := wall.InvoiceOptions{}
+	lnClient := ln

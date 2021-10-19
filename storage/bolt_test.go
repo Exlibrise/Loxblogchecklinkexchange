@@ -18,4 +18,5 @@ func TestBoltClientImpl(t *testing.T) {
 	t.SkipNow()
 	invoiceOptions := wall.InvoiceOptions{}
 	lnClient := ln.LNDclient{}
-	boltClient, _ := storage.NewBoltClient(storage.D
+	boltClient, _ := storage.NewBoltClient(storage.DefaultBoltOptions)
+	wall

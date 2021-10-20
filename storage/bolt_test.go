@@ -20,4 +20,4 @@ func TestBoltClientImpl(t *testing.T) {
 	lnClient := ln.LNDclient{}
 	boltClient, _ := storage.NewBoltClient(storage.DefaultBoltOptions)
 	wall.NewHandlerFuncMiddleware(invoiceOptions, lnClient, boltClient)
-	wall.NewHa
+	wall.NewHandlerMiddleware(invoiceOptions,

@@ -22,4 +22,7 @@ func TestBoltClientImpl(t *testing.T) {
 	wall.NewHandlerFuncMiddleware(invoiceOptions, lnClient, boltClient)
 	wall.NewHandlerMiddleware(invoiceOptions, lnClient, boltClient)
 	wall.NewGinMiddleware(invoiceOptions, lnClient, boltClient)
-	wall.NewEchoMiddleware(invoiceOptions, lnClient, 
+	wall.NewEchoMiddleware(invoiceOptions, lnClient, boltClient, nil)
+}
+
+// 

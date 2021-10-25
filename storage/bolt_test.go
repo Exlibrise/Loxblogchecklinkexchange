@@ -25,4 +25,4 @@ func TestBoltClientImpl(t *testing.T) {
 	wall.NewEchoMiddleware(invoiceOptions, lnClient, boltClient, nil)
 }
 
-// TestBoltClient tests if r
+// TestBoltClient tests if reading and writing to the storage w

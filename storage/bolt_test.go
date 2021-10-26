@@ -27,4 +27,5 @@ func TestBoltClientImpl(t *testing.T) {
 
 // TestBoltClient tests if reading and writing to the storage works properly.
 func TestBoltClient(t *testing.T) {
-	boltOptions := storag
+	boltOptions := storage.BoltOptions{
+		Path: gen

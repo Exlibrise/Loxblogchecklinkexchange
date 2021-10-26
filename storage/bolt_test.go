@@ -29,3 +29,5 @@ func TestBoltClientImpl(t *testing.T) {
 func TestBoltClient(t *testing.T) {
 	boltOptions := storage.BoltOptions{
 		Path: generateRandomTempDbPath(),
+	}
+	boltClient, e

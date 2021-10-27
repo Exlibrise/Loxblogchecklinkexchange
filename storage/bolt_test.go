@@ -30,4 +30,4 @@ func TestBoltClient(t *testing.T) {
 	boltOptions := storage.BoltOptions{
 		Path: generateRandomTempDbPath(),
 	}
-	boltClient, e
+	boltClient, err := storage.NewBoltClien

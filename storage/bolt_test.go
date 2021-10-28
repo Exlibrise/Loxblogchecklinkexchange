@@ -35,3 +35,6 @@ func TestBoltClient(t *testing.T) {
 		t.Error(err)
 	}
 
+	testStorageClient(boltClient, t)
+}
+

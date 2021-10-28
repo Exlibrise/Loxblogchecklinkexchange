@@ -38,3 +38,4 @@ func TestBoltClient(t *testing.T) {
 	testStorageClient(boltClient, t)
 }
 
+// TestBoltClientConcurrent

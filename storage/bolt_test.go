@@ -31,4 +31,7 @@ func TestBoltClient(t *testing.T) {
 		Path: generateRandomTempDbPath(),
 	}
 	boltClient, err := storage.NewBoltClient(boltOptions)
-	if err
+	if err != nil {
+		t.Error(err)
+	}
+

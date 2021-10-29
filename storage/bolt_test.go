@@ -38,4 +38,4 @@ func TestBoltClient(t *testing.T) {
 	testStorageClient(boltClient, t)
 }
 
-// TestBoltClientConcurrent launches a bunch of goroutine
+// TestBoltClientConcurrent launches a bunch of goroutines that concurrently work with one Bol

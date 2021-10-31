@@ -40,4 +40,4 @@ func TestBoltClient(t *testing.T) {
 
 // TestBoltClientConcurrent launches a bunch of goroutines that concurrently work with one BoltClient.
 // The BoltClient works with a single file, so everything should be locked properly.
-// The 
+// The locking is implemented in t

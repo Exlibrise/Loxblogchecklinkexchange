@@ -42,4 +42,5 @@ func TestBoltClient(t *testing.T) {
 // The BoltClient works with a single file, so everything should be locked properly.
 // The locking is implemented in the bbolt package, but test it nonetheless.
 func TestBoltClientConcurrent(t *testing.T) {
-	boltOptions := storage.Bo
+	boltOptions := storage.BoltOptions{
+		Path: g

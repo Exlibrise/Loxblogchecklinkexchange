@@ -43,4 +43,4 @@ func TestBoltClient(t *testing.T) {
 // The locking is implemented in the bbolt package, but test it nonetheless.
 func TestBoltClientConcurrent(t *testing.T) {
 	boltOptions := storage.BoltOptions{
-		Path: g
+		Path: generateRandomTempDbPath(),

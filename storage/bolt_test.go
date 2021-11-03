@@ -45,4 +45,4 @@ func TestBoltClientConcurrent(t *testing.T) {
 	boltOptions := storage.BoltOptions{
 		Path: generateRandomTempDbPath(),
 	}
-	boltClient, err := storage.
+	boltClient, err := storage.NewBoltClient(boltOptio

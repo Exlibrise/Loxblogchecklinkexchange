@@ -47,4 +47,7 @@ func TestBoltClientConcurrent(t *testing.T) {
 	}
 	boltClient, err := storage.NewBoltClient(boltOptions)
 	if err != nil {
-		t.Erro
+		t.Error(err)
+	}
+
+	goroutineCoun

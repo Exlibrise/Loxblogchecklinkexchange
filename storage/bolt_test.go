@@ -50,4 +50,6 @@ func TestBoltClientConcurrent(t *testing.T) {
 		t.Error(err)
 	}
 
-	goroutineCoun
+	goroutineCount := 1000
+
+	waitGroup := s

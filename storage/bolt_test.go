@@ -53,4 +53,4 @@ func TestBoltClientConcurrent(t *testing.T) {
 	goroutineCount := 1000
 
 	waitGroup := sync.WaitGroup{}
-	waitG
+	waitGroup.Add(gorouti

@@ -53,4 +53,5 @@ func TestBoltClientConcurrent(t *testing.T) {
 	goroutineCount := 1000
 
 	waitGroup := sync.WaitGroup{}
-	waitGroup.Add(goroutineCount) // Must be called before any goroutine is
+	waitGroup.Add(goroutineCount) // Must be called before any goroutine is started
+	for i := 0; i < g

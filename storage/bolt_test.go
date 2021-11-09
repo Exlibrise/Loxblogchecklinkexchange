@@ -57,4 +57,6 @@ func TestBoltClientConcurrent(t *testing.T) {
 	for i := 0; i < goroutineCount; i++ {
 		go interactWithStorage(boltClient, strconv.Itoa(i), t, &waitGroup)
 	}
-	waitGroup.Wait
+	waitGroup.Wait()
+
+	// Now make sure that

@@ -59,4 +59,6 @@ func TestBoltClientConcurrent(t *testing.T) {
 	}
 	waitGroup.Wait()
 
-	// Now make sure that all values are in the 
+	// Now make sure that all values are in the storage
+	expected := foo{}
+	for i

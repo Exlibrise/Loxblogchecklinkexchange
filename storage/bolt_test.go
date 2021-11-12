@@ -61,4 +61,5 @@ func TestBoltClientConcurrent(t *testing.T) {
 
 	// Now make sure that all values are in the storage
 	expected := foo{}
-	for i := 0; i < goroutineCount
+	for i := 0; i < goroutineCount; i++ {
+		actualPtr := new(

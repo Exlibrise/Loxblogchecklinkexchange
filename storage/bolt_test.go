@@ -63,4 +63,4 @@ func TestBoltClientConcurrent(t *testing.T) {
 	expected := foo{}
 	for i := 0; i < goroutineCount; i++ {
 		actualPtr := new(foo)
-		found, err := bolt
+		found, err := boltClient.Get(strconv.Itoa(i), act

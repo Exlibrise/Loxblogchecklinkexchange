@@ -67,3 +67,5 @@ func TestBoltClientConcurrent(t *testing.T) {
 		if err != nil {
 			t.Errorf("An error occurred during the test: %v", err)
 		}
+		if !found {
+			t.Erro

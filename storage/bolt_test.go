@@ -65,4 +65,4 @@ func TestBoltClientConcurrent(t *testing.T) {
 		actualPtr := new(foo)
 		found, err := boltClient.Get(strconv.Itoa(i), actualPtr)
 		if err != nil {
-		
+			t.Errorf("An error occurred 

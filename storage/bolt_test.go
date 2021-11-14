@@ -68,4 +68,5 @@ func TestBoltClientConcurrent(t *testing.T) {
 			t.Errorf("An error occurred during the test: %v", err)
 		}
 		if !found {
-			t.Errorf("No value was found, but
+			t.Errorf("No value was found, but should have been")
+		

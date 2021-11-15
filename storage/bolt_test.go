@@ -72,4 +72,4 @@ func TestBoltClientConcurrent(t *testing.T) {
 		}
 		actual := *actualPtr
 		if actual != expected {
-			t.Errorf(
+			t.Errorf("Expected: %v, but was: %v", ex

@@ -71,4 +71,5 @@ func TestBoltClientConcurrent(t *testing.T) {
 			t.Errorf("No value was found, but should have been")
 		}
 		actual := *actualPtr
-		if actu
+		if actual != expected {
+			t.Errorf(

@@ -78,4 +78,4 @@ func TestBoltClientConcurrent(t *testing.T) {
 }
 
 func generateRandomTempDbPath() string {
-	return os.TempDir() + 
+	return os.TempDir() + "/" + strconv.FormatIn

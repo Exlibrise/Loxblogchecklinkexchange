@@ -4,4 +4,4 @@ import (
 	"sync"
 )
 
-// GoMap is a Stora
+// GoMap is a StorageClient implemen

@@ -6,4 +6,7 @@ import (
 
 // GoMap is a StorageClient implementation for a simple Go sync.Map.
 type GoMap struct {
-	m
+	m *sync.Map
+}
+
+// Set stores

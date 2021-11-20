@@ -4,4 +4,4 @@ import (
 	"sync"
 )
 
-// GoMap is a StorageClient implemen
+// GoMap is a StorageClient implementation for a simple Go sync.Map

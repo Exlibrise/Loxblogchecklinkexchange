@@ -9,4 +9,4 @@ type GoMap struct {
 	m *sync.Map
 }
 
-// Set stores
+// Set stores the given object for the 

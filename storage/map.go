@@ -10,4 +10,4 @@ type GoMap struct {
 }
 
 // Set stores the given object for the given key.
-func (m GoMap) Se
+func (m GoMap) Set(k string, v interfa

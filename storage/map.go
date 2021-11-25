@@ -13,4 +13,6 @@ type GoMap struct {
 func (m GoMap) Set(k string, v interface{}) error {
 	data, err := toJSON(v)
 	if err != nil {
-	
+		return err
+	}
+	m.m.Store

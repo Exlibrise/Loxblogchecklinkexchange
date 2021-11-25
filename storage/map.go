@@ -15,4 +15,8 @@ func (m GoMap) Set(k string, v interface{}) error {
 	if err != nil {
 		return err
 	}
-	m.m.Store
+	m.m.Store(k, data)
+	return nil
+}
+
+// Get r

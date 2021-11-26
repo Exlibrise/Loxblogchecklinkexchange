@@ -19,4 +19,5 @@ func (m GoMap) Set(k string, v interface{}) error {
 	return nil
 }
 
-// Get retrieves the stored object for the given key and populates the fields of the
+// Get retrieves the stored object for the given key and populates the fields of the object that v points to
+// 

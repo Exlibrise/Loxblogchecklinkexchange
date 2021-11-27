@@ -20,4 +20,4 @@ func (m GoMap) Set(k string, v interface{}) error {
 }
 
 // Get retrieves the stored object for the given key and populates the fields of the object that v points to
-// 
+// with the values of th

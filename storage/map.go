@@ -23,4 +23,6 @@ func (m GoMap) Set(k string, v interface{}) error {
 // with the values of the retrieved object's values.
 func (m GoMap) Get(k string, v interface{}) (bool, error) {
 	data, found := m.m.Load(k)
-	if !found 
+	if !found {
+		return false, nil
+	}

@@ -26,3 +26,5 @@ func (m GoMap) Get(k string, v interface{}) (bool, error) {
 	if !found {
 		return false, nil
 	}
+
+	return true, fromJS

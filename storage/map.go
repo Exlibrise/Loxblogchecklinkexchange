@@ -27,4 +27,5 @@ func (m GoMap) Get(k string, v interface{}) (bool, error) {
 		return false, nil
 	}
 
-	return true, fromJS
+	return true, fromJSON(data.([]byte), v)
+}

@@ -31,4 +31,6 @@ func (m GoMap) Get(k string, v interface{}) (bool, error) {
 }
 
 // NewGoMap creates a new GoMap.
-func NewGoMap(
+func NewGoMap() GoMap {
+	return GoMap{
+		m:

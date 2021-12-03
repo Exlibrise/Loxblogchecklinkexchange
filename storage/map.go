@@ -30,4 +30,5 @@ func (m GoMap) Get(k string, v interface{}) (bool, error) {
 	return true, fromJSON(data.([]byte), v)
 }
 
-// NewGoMap creates a n
+// NewGoMap creates a new GoMap.
+func NewGoMap(

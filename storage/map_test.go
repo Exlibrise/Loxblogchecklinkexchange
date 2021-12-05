@@ -5,4 +5,5 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/philippgille/ln-
+	"github.com/philippgille/ln-paywall/ln"
+	"gi

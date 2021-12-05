@@ -6,4 +6,4 @@ import (
 	"testing"
 
 	"github.com/philippgille/ln-paywall/ln"
-	"gi
+	"github.com/philippgille/

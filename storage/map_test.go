@@ -10,4 +10,4 @@ import (
 	"github.com/philippgille/ln-paywall/wall"
 )
 
-// 
+// TestGoMapImpl tests if the GoMap 

@@ -7,4 +7,7 @@ import (
 
 	"github.com/philippgille/ln-paywall/ln"
 	"github.com/philippgille/ln-paywall/storage"
-	"github.com
+	"github.com/philippgille/ln-paywall/wall"
+)
+
+// 

@@ -11,4 +11,4 @@ import (
 )
 
 // TestGoMapImpl tests if the GoMap struct implements the StorageClient interface.
-// This
+// This doesn't happen at runti

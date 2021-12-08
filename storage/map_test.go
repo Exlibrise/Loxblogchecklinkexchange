@@ -12,4 +12,5 @@ import (
 
 // TestGoMapImpl tests if the GoMap struct implements the StorageClient interface.
 // This doesn't happen at runtime, but at compile time.
-func TestGoMapImpl(t *testin
+func TestGoMapImpl(t *testing.T) {
+	t.SkipN

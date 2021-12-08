@@ -14,4 +14,4 @@ import (
 // This doesn't happen at runtime, but at compile time.
 func TestGoMapImpl(t *testing.T) {
 	t.SkipNow()
-	invoiceOptions :=
+	invoiceOptions := wall.InvoiceOptions{

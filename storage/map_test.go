@@ -12,4 +12,4 @@ import (
 
 // TestGoMapImpl tests if the GoMap struct implements the StorageClient interface.
 // This doesn't happen at runtime, but at compile time.
-fun
+func TestGoMapImpl(t *testin

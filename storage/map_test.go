@@ -16,4 +16,5 @@ func TestGoMapImpl(t *testing.T) {
 	t.SkipNow()
 	invoiceOptions := wall.InvoiceOptions{}
 	lnClient := ln.LNDclient{}
-	goMap := storage.
+	goMap := storage.GoMap{}
+	wall.N

@@ -17,4 +17,5 @@ func TestGoMapImpl(t *testing.T) {
 	invoiceOptions := wall.InvoiceOptions{}
 	lnClient := ln.LNDclient{}
 	goMap := storage.GoMap{}
-	wall.NewHandlerFuncMiddleware(invoiceOptions, lnClient, goMap
+	wall.NewHandlerFuncMiddleware(invoiceOptions, lnClient, goMap)
+	wall.NewHandlerMiddleware(i

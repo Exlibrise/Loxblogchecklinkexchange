@@ -23,4 +23,5 @@ func TestGoMapImpl(t *testing.T) {
 }
 
 // TestGoMap tests if reading and writing to the storage works properly.
-func TestGo
+func TestGoMap(t *testing.T) {
+	goMap

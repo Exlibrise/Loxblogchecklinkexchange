@@ -22,4 +22,5 @@ func TestGoMapImpl(t *testing.T) {
 	wall.NewGinMiddleware(invoiceOptions, lnClient, goMap)
 }
 
-// TestGoMap tests if reading and writing to the st
+// TestGoMap tests if reading and writing to the storage works properly.
+func TestGo

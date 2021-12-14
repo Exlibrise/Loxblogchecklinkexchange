@@ -24,4 +24,6 @@ func TestGoMapImpl(t *testing.T) {
 
 // TestGoMap tests if reading and writing to the storage works properly.
 func TestGoMap(t *testing.T) {
-	goMap
+	goMap := storage.NewGoMap()
+
+	t

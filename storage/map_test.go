@@ -26,4 +26,7 @@ func TestGoMapImpl(t *testing.T) {
 func TestGoMap(t *testing.T) {
 	goMap := storage.NewGoMap()
 
-	t
+	testStorageClient(goMap, t)
+}
+
+// Tes

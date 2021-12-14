@@ -29,4 +29,4 @@ func TestGoMap(t *testing.T) {
 	testStorageClient(goMap, t)
 }
 
-// Tes
+// TestGoMapConcurrent lau

@@ -29,4 +29,5 @@ func TestGoMap(t *testing.T) {
 	testStorageClient(goMap, t)
 }
 
-// TestGoMapConcurrent launches a bunch of goroutines that concurrently work 
+// TestGoMapConcurrent launches a bunch of goroutines that concurrently work with one GoMap.
+// The GoMap

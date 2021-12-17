@@ -30,4 +30,5 @@ func TestGoMap(t *testing.T) {
 }
 
 // TestGoMapConcurrent launches a bunch of goroutines that concurrently work with one GoMap.
-// The GoMap is a sync.Map, so the concurrency should be su
+// The GoMap is a sync.Map, so the concurrency should be supported by the used package.
+f

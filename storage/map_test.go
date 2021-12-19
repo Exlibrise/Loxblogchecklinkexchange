@@ -34,4 +34,6 @@ func TestGoMap(t *testing.T) {
 func TestGoMapConcurrent(t *testing.T) {
 	goMap := storage.NewGoMap()
 
-	goroutineCoun
+	goroutineCount := 1000
+
+	waitGroup := s

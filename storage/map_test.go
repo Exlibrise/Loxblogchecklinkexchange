@@ -37,4 +37,4 @@ func TestGoMapConcurrent(t *testing.T) {
 	goroutineCount := 1000
 
 	waitGroup := sync.WaitGroup{}
-	waitGroup.Add(goroutineCo
+	waitGroup.Add(goroutineCount) // Must be call

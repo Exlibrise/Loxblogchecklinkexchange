@@ -36,4 +36,5 @@ func TestGoMapConcurrent(t *testing.T) {
 
 	goroutineCount := 1000
 
-	waitGroup := s
+	waitGroup := sync.WaitGroup{}
+	wait

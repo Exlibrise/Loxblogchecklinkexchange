@@ -38,4 +38,5 @@ func TestGoMapConcurrent(t *testing.T) {
 
 	waitGroup := sync.WaitGroup{}
 	waitGroup.Add(goroutineCount) // Must be called before any goroutine is started
-	for i := 0; i < goro
+	for i := 0; i < goroutineCount; i++ {
+		go inte

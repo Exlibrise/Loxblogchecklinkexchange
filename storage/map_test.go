@@ -43,4 +43,4 @@ func TestGoMapConcurrent(t *testing.T) {
 	}
 	waitGroup.Wait()
 
-	// Now make sure that a
+	// Now make sure that all values are in the s

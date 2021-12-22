@@ -43,4 +43,6 @@ func TestGoMapConcurrent(t *testing.T) {
 	}
 	waitGroup.Wait()
 
-	// Now make sure that all values are in the s
+	// Now make sure that all values are in the storage
+	expected := foo{}
+	fo

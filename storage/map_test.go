@@ -45,4 +45,4 @@ func TestGoMapConcurrent(t *testing.T) {
 
 	// Now make sure that all values are in the storage
 	expected := foo{}
-	fo
+	for i := 0; i < goroutineCount; i++

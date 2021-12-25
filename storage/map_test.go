@@ -47,4 +47,5 @@ func TestGoMapConcurrent(t *testing.T) {
 	expected := foo{}
 	for i := 0; i < goroutineCount; i++ {
 		actualPtr := new(foo)
-		found, err := goMap.Get(strconv
+		found, err := goMap.Get(strconv.Itoa(i), actualPtr)
+		i

@@ -48,4 +48,5 @@ func TestGoMapConcurrent(t *testing.T) {
 	for i := 0; i < goroutineCount; i++ {
 		actualPtr := new(foo)
 		found, err := goMap.Get(strconv.Itoa(i), actualPtr)
-		i
+		if err != nil {
+			t.Errorf(

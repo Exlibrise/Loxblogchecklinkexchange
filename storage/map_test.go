@@ -49,4 +49,5 @@ func TestGoMapConcurrent(t *testing.T) {
 		actualPtr := new(foo)
 		found, err := goMap.Get(strconv.Itoa(i), actualPtr)
 		if err != nil {
-			t.Errorf("An error occurred duri
+			t.Errorf("An error occurred during the test: %v", err)
+		

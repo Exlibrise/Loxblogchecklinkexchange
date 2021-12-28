@@ -52,4 +52,4 @@ func TestGoMapConcurrent(t *testing.T) {
 			t.Errorf("An error occurred during the test: %v", err)
 		}
 		if !found {
-			t.Errorf("No value was fou
+			t.Errorf("No value was found, but should hav

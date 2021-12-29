@@ -54,4 +54,6 @@ func TestGoMapConcurrent(t *testing.T) {
 		if !found {
 			t.Errorf("No value was found, but should have been")
 		}
-		actual := *actual
+		actual := *actualPtr
+		if actual != expected {
+			t.Er

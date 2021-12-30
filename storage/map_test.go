@@ -56,4 +56,7 @@ func TestGoMapConcurrent(t *testing.T) {
 		}
 		actual := *actualPtr
 		if actual != expected {
-			t.Errorf("Expected: %v, but was: %v", expected, actual
+			t.Errorf("Expected: %v, but was: %v", expected, actual)
+		}
+	}
+}

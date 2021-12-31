@@ -62,3 +62,16 @@ var DefaultRedisOptions = RedisOptions{
 }
 
 // NewRedisClient creates a new RedisClient.
+func NewRedisClient(redisOptions RedisOptions) RedisClient {
+	// Set default values
+	if redisOptions.Address == "" {
+		redisOptions.Address = DefaultRedisOptions.Address
+	}
+	return RedisClient{
+		c: redis.NewClient(&redis.Options{
+			Addr:     redisOptions.Address,
+			Password: redisOptions.Password,
+			DB:       redisOptions.DB,
+		}),
+	}
+}

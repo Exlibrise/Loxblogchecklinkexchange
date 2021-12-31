@@ -37,3 +37,28 @@ func (c RedisClient) Get(k string, v interface{}) (bool, error) {
 		}
 		return false, err
 	}
+
+	return true, fromJSON([]byte(data), v)
+}
+
+// RedisOptions are the options for the Redis DB.
+type RedisOptions struct {
+	// Address of the Redis server, including the port.
+	// Optional ("localhost:6379" by default).
+	Address string
+	// Password for the Redis server.
+	// Optional ("" by default).
+	Password string
+	// DB to use.
+	// Optional (0 by default).
+	DB int
+}
+
+// DefaultRedisOptions is a RedisOptions object with default values.
+// Address: "localhost:6379", Password: "", DB: 0
+var DefaultRedisOptions = RedisOptions{
+	Address: "localhost:6379",
+	// No need to set Password or DB, since their Go zero values are fine for that
+}
+
+// NewRedisClient creates a new RedisClient.

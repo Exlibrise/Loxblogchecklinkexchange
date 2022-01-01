@@ -49,3 +49,32 @@ func TestRedisClient(t *testing.T) {
 
 // TestRedisClientConcurrent launches a bunch of goroutines that concurrently work with the Redis client.
 func TestRedisClientConcurrent(t *testing.T) {
+	if !checkRedisConnection(testDbNumber) {
+		t.Skip("No connection to Redis could be established. Probably not running in a proper test environment.")
+	}
+
+	deleteRedisDb(testDbNumber) // Prep for previous test runs
+	redisOptions := storage.RedisOptions{
+		DB: testDbNumber,
+	}
+	redisClient := storage.NewRedisClient(redisOptions)
+
+	goroutineCount := 1000
+
+	waitGroup := sync.WaitGroup{}
+	waitGroup.Add(goroutineCount) // Must be called before any goroutine is started
+	for i := 0; i < goroutineCount; i++ {
+		go interactWithStorage(redisClient, strconv.Itoa(i), t, &waitGroup)
+	}
+	waitGroup.Wait()
+
+	// Now make sure that all values are in the storage
+	expected := foo{}
+	for i := 0; i < goroutineCount; i++ {
+		actualPtr := new(foo)
+		found, err := redisClient.Get(strconv.Itoa(i), actualPtr)
+		if err != nil {
+			t.Errorf("An error occurred during the test: %v", err)
+		}
+		if !found {
+			t.Errorf("No value was found, but should have been")

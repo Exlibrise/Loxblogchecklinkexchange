@@ -78,3 +78,28 @@ func TestRedisClientConcurrent(t *testing.T) {
 		}
 		if !found {
 			t.Errorf("No value was found, but should have been")
+		}
+		actual := *actualPtr
+		if actual != expected {
+			t.Errorf("Expected: %v, but was: %v", expected, actual)
+		}
+	}
+}
+
+// checkRedisConnection returns true if a connection could be made, false otherwise.
+func checkRedisConnection(number int) bool {
+	redisClient := redis.NewClient(&redis.Options{
+		Addr:     storage.DefaultRedisOptions.Address,
+		Password: storage.DefaultRedisOptions.Password,
+		DB:       number,
+	})
+	err := redisClient.Ping().Err()
+	if err != nil {
+		log.Printf("An error occurred during testing the connection to Redis: %v\n", err)
+		return false
+	}
+	return true
+}
+
+// deleteRedisDb deletes all entries of the given DB
+func deleteRedisDb(number int) error {

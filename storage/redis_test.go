@@ -103,3 +103,10 @@ func checkRedisConnection(number int) bool {
 
 // deleteRedisDb deletes all entries of the given DB
 func deleteRedisDb(number int) error {
+	redisClient := redis.NewClient(&redis.Options{
+		Addr:     storage.DefaultRedisOptions.Address,
+		Password: storage.DefaultRedisOptions.Password,
+		DB:       number,
+	})
+	return redisClient.FlushDB().Err()
+}

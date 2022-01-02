@@ -4,4 +4,5 @@ import (
 	"encoding/json"
 )
 
-func toJSON(v interfac
+func toJSON(v interface{}) ([]byte, error) {
+	retur

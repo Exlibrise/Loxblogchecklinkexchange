@@ -5,4 +5,7 @@ import (
 )
 
 func toJSON(v interface{}) ([]byte, error) {
-	retur
+	return json.Marshal(v)
+}
+
+fun

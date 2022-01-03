@@ -8,4 +8,5 @@ func toJSON(v interface{}) ([]byte, error) {
 	return json.Marshal(v)
 }
 
-func fromJSON(data []byte, v interfa
+func fromJSON(data []byte, v interface{}) error {
+	return json.

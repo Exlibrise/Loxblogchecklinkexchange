@@ -29,3 +29,29 @@ func testStorageClient(storageClient wall.StorageClient, t *testing.T) {
 
 	// Store an object
 	val := foo{
+		Bar: "baz",
+	}
+	err = storageClient.Set(key, val)
+	if err != nil {
+		t.Error(err)
+	}
+
+	// Retrieve the object
+	expected := val
+	actualPtr := new(foo)
+	found, err = storageClient.Get(key, actualPtr)
+	if err != nil {
+		t.Error(err)
+	}
+	if !found {
+		t.Errorf("No value was found, but should have been")
+	}
+	actual := *actualPtr
+	if actual != expected {
+		t.Errorf("Expected: %v, but was: %v", expected, actual)
+	}
+}
+
+// interactWithStorage reads from and writes to the DB. Meant to be executed in a goroutine.
+// Does NOT check if the DB works correctly (that's done elsewhere),
+// only checks for errors that might occur due to concurrent access.

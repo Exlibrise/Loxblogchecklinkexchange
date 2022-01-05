@@ -55,3 +55,22 @@ func testStorageClient(storageClient wall.StorageClient, t *testing.T) {
 // interactWithStorage reads from and writes to the DB. Meant to be executed in a goroutine.
 // Does NOT check if the DB works correctly (that's done elsewhere),
 // only checks for errors that might occur due to concurrent access.
+func interactWithStorage(storageClient wall.StorageClient, key string, t *testing.T, waitGroup *sync.WaitGroup) {
+	defer waitGroup.Done()
+
+	// Read
+	_, err := storageClient.Get(key, new(foo))
+	if err != nil {
+		t.Error(err)
+	}
+	// Write
+	err = storageClient.Set(key, foo{})
+	if err != nil {
+		t.Error(err)
+	}
+	// Read
+	_, err = storageClient.Get(key, new(foo))
+	if err != nil {
+		t.Error(err)
+	}
+}

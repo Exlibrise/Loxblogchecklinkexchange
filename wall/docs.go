@@ -7,3 +7,5 @@ but all functions require a storage client (an implementation of the wall.Storag
 You can either pick one from the storage package (https://www.godoc.org/github.com/philippgille/ln-paywall/storage), or implement your own.
 
 Usage
+
+Here's one example of a web ser

@@ -9,4 +9,4 @@ You can either pick one from the storage package (https://www.godoc.org/github.c
 Usage
 
 Here's one example of a web service implemented with Gin.
-For more examples chec
+For more examples check out the "examples" direc

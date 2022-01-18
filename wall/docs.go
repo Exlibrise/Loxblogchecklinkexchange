@@ -11,4 +11,9 @@ Usage
 Here's one example of a web service implemented with Gin.
 For more examples check out the "examples" directory in the GitHub repository of this package (https://github.com/philippgille/ln-paywall/tree/master/examples).
 
-	packag
+	package main
+
+	import (
+		"net/http"
+
+		"

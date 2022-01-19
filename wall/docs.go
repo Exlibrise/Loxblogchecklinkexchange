@@ -17,4 +17,5 @@ For more examples check out the "examples" directory in the GitHub repository of
 		"net/http"
 
 		"github.com/gin-gonic/gin"
-		"github.com/philippgille/
+		"github.com/philippgille/ln-paywall/ln"
+		"github.co

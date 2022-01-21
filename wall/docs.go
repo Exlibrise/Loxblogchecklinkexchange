@@ -18,4 +18,5 @@ For more examples check out the "examples" directory in the GitHub repository of
 
 		"github.com/gin-gonic/gin"
 		"github.com/philippgille/ln-paywall/ln"
-		"github.com/philippgille/ln-paywall/storage
+		"github.com/philippgille/ln-paywall/storage"
+		"github.com/philippgille/ln-payw

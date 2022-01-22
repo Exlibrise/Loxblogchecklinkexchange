@@ -26,4 +26,4 @@ For more examples check out the "examples" directory in the GitHub repository of
 		r := gin.Default()
 
 		// Configure middleware
-		invoiceOptio
+		invoiceOptions := wall.DefaultInvoi

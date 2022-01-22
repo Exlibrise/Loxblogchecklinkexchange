@@ -25,4 +25,5 @@ For more examples check out the "examples" directory in the GitHub repository of
 	func main() {
 		r := gin.Default()
 
-		// Configure middlewar
+		// Configure middleware
+		invoiceOptio

@@ -26,4 +26,5 @@ For more examples check out the "examples" directory in the GitHub repository of
 		r := gin.Default()
 
 		// Configure middleware
-		invoiceOptions := wall.DefaultInvoiceOptions // Price: 1 Satosh
+		invoiceOptions := wall.DefaultInvoiceOptions // Price: 1 Satoshi; Memo: "API call"
+		lndOptions :=

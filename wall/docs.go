@@ -27,4 +27,4 @@ For more examples check out the "examples" directory in the GitHub repository of
 
 		// Configure middleware
 		invoiceOptions := wall.DefaultInvoiceOptions // Price: 1 Satoshi; Memo: "API call"
-		lndOptions := ln.DefaultLNDoptions           // Address: "localhost:1
+		lndOptions := ln.DefaultLNDoptions           // Address: "localhost:10009", CertFile: "tls.cert", Macaroon

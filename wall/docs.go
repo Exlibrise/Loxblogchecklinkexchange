@@ -30,4 +30,5 @@ For more examples check out the "examples" directory in the GitHub repository of
 		lndOptions := ln.DefaultLNDoptions           // Address: "localhost:10009", CertFile: "tls.cert", MacaroonFile: "invoice.macaroon"
 		storageClient := storage.NewGoMap()          // Local in-memory cache
 		lnClient, err := ln.NewLNDclient(lndOptions)
-		i
+		if err != nil {
+			pani

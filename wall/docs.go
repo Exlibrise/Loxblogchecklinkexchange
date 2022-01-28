@@ -34,4 +34,4 @@ For more examples check out the "examples" directory in the GitHub repository of
 			panic(err)
 		}
 		// Use middleware
-		
+		r.Use(wall.NewGinMiddleware(

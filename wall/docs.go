@@ -31,4 +31,7 @@ For more examples check out the "examples" directory in the GitHub repository of
 		storageClient := storage.NewGoMap()          // Local in-memory cache
 		lnClient, err := ln.NewLNDclient(lndOptions)
 		if err != nil {
-			pani
+			panic(err)
+		}
+		// Use middleware
+		

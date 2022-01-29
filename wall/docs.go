@@ -37,3 +37,4 @@ For more examples check out the "examples" directory in the GitHub repository of
 		r.Use(wall.NewGinMiddleware(invoiceOptions, lnClient, storageClient))
 
 		r.GET("/ping", func(c *gin.Context) {
+			c.String(http.St

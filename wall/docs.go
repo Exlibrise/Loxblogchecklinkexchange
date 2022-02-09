@@ -40,4 +40,4 @@ For more examples check out the "examples" directory in the GitHub repository of
 			c.String(http.StatusOK, "pong")
 		})
 
-		r.
+		r.Run() // Listen and ser

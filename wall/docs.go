@@ -43,3 +43,4 @@ For more examples check out the "examples" directory in the GitHub repository of
 		r.Run() // Listen and serve on 0.0.0.0:8080
 	}
 */
+package wall

@@ -6,4 +6,4 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// NewGinMiddleware 
+// NewGinMiddleware returns a Gin middleware in th

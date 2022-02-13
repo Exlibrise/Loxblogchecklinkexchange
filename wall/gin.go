@@ -6,4 +6,4 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// NewGinMiddleware returns a Gin middleware in th
+// NewGinMiddleware returns a Gin middleware in the form of a gin.HandlerFunc.

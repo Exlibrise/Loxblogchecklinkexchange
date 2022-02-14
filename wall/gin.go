@@ -7,3 +7,4 @@ import (
 )
 
 // NewGinMiddleware returns a Gin middleware in the form of a gin.HandlerFunc.
+func NewGinMiddleware(invo

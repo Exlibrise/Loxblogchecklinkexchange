@@ -9,4 +9,4 @@ import (
 // NewGinMiddleware returns a Gin middleware in the form of a gin.HandlerFunc.
 func NewGinMiddleware(invoiceOptions InvoiceOptions, lnClient LNclient, storageClient StorageClient) gin.HandlerFunc {
 	invoiceOptions = assignDefaultValues(invoiceOptions)
-	return
+	return func(ctx *gin.Context)

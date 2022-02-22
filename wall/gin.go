@@ -10,4 +10,5 @@ import (
 func NewGinMiddleware(invoiceOptions InvoiceOptions, lnClient LNclient, storageClient StorageClient) gin.HandlerFunc {
 	invoiceOptions = assignDefaultValues(invoiceOptions)
 	return func(ctx *gin.Context) {
-		fa := ginAbstrac
+		fa := ginAbstraction{
+			ctx: ctx,

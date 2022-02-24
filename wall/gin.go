@@ -13,4 +13,4 @@ func NewGinMiddleware(invoiceOptions InvoiceOptions, lnClient LNclient, storageC
 		fa := ginAbstraction{
 			ctx: ctx,
 		}
-		commonHandler(fa, 
+		commonHandler(fa, invoiceOptions, lnClient

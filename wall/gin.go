@@ -20,3 +20,5 @@ func NewGinMiddleware(invoiceOptions InvoiceOptions, lnClient LNclient, storageC
 type ginAbstraction struct {
 	ctx *gin.Context
 }
+
+func (fa ginAbstraction) g

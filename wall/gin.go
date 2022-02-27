@@ -21,4 +21,4 @@ type ginAbstraction struct {
 	ctx *gin.Context
 }
 
-func (fa ginAbstraction) g
+func (fa ginAbstraction) getPreimageFromHeader() string

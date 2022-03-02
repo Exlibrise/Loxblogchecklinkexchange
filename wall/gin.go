@@ -22,4 +22,7 @@ type ginAbstraction struct {
 }
 
 func (fa ginAbstraction) getPreimageFromHeader() string {
-	return fa.ctx.GetHeader("x-
+	return fa.ctx.GetHeader("x-preimage")
+}
+
+func (fa ginAbst

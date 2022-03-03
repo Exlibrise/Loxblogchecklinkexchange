@@ -25,4 +25,4 @@ func (fa ginAbstraction) getPreimageFromHeader() string {
 	return fa.ctx.GetHeader("x-preimage")
 }
 
-func (fa ginAbst
+func (fa ginAbstraction) respondWithError(err error

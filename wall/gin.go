@@ -25,4 +25,5 @@ func (fa ginAbstraction) getPreimageFromHeader() string {
 	return fa.ctx.GetHeader("x-preimage")
 }
 
-func (fa ginAbstraction) respondWithError(err error, errorMsg string, statusCode 
+func (fa ginAbstraction) respondWithError(err error, errorMsg string, statusCode int) {
+	http.Error(fa.ctx.Writer,

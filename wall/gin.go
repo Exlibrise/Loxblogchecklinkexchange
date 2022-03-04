@@ -26,4 +26,5 @@ func (fa ginAbstraction) getPreimageFromHeader() string {
 }
 
 func (fa ginAbstraction) respondWithError(err error, errorMsg string, statusCode int) {
-	http.Error(fa.ctx.Writer,
+	http.Error(fa.ctx.Writer, errorMsg, statusCode)
+	fa

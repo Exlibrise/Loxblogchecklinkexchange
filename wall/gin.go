@@ -30,4 +30,4 @@ func (fa ginAbstraction) respondWithError(err error, errorMsg string, statusCode
 	fa.ctx.Abort()
 }
 
-func (fa ginAb
+func (fa ginAbstraction) getHTTPreques

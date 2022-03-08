@@ -30,4 +30,5 @@ func (fa ginAbstraction) respondWithError(err error, errorMsg string, statusCode
 	fa.ctx.Abort()
 }
 
-func (fa ginAbstraction) getHTTPreques
+func (fa ginAbstraction) getHTTPrequest() *http.Request {
+	return fa.c

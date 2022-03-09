@@ -34,4 +34,4 @@ func (fa ginAbstraction) getHTTPrequest() *http.Request {
 	return fa.ctx.Request
 }
 
-func (fa g
+func (fa ginAbstraction) respondWith

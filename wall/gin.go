@@ -34,4 +34,4 @@ func (fa ginAbstraction) getHTTPrequest() *http.Request {
 	return fa.ctx.Request
 }
 
-func (fa ginAbstraction) respondWithInvoice(headers map[string]s
+func (fa ginAbstraction) respondWithInvoice(headers map[string]string, statusCode int

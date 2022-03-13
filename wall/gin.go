@@ -38,4 +38,5 @@ func (fa ginAbstraction) respondWithInvoice(headers map[string]string, statusCod
 	for k, v := range headers {
 		fa.ctx.Header(k, v)
 	}
-	fa.
+	fa.ctx.Status(statusCode)
+	fa.c

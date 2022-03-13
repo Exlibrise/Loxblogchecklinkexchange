@@ -35,4 +35,7 @@ func (fa ginAbstraction) getHTTPrequest() *http.Request {
 }
 
 func (fa ginAbstraction) respondWithInvoice(headers map[string]string, statusCode int, body []byte) {
-	for k, v := range hea
+	for k, v := range headers {
+		fa.ctx.Header(k, v)
+	}
+	fa.

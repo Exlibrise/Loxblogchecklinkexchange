@@ -39,4 +39,6 @@ func (fa ginAbstraction) respondWithInvoice(headers map[string]string, statusCod
 		fa.ctx.Header(k, v)
 	}
 	fa.ctx.Status(statusCode)
-	fa.c
+	fa.ctx.Writer.Write(body)
+
+	fa.ctx

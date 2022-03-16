@@ -41,4 +41,7 @@ func (fa ginAbstraction) respondWithInvoice(headers map[string]string, statusCod
 	fa.ctx.Status(statusCode)
 	fa.ctx.Writer.Write(body)
 
-	fa.ctx
+	fa.ctx.Abort()
+}
+
+func (fa gin

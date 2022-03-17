@@ -44,4 +44,5 @@ func (fa ginAbstraction) respondWithInvoice(headers map[string]string, statusCod
 	fa.ctx.Abort()
 }
 
-func (fa gin
+func (fa ginAbstraction) next() error {
+	

@@ -1,1 +1,4 @@
-package wa
+package wall
+
+import (
+	"encoding/hex"

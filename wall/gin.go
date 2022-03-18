@@ -46,4 +46,5 @@ func (fa ginAbstraction) respondWithInvoice(headers map[string]string, statusCod
 
 func (fa ginAbstraction) next() error {
 	fa.ctx.Next()
-	return 
+	return nil
+}

@@ -9,4 +9,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/phil
+	"github.com/philippgille/ln-paywall/ln"
+)
+
+//

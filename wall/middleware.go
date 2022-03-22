@@ -12,4 +12,4 @@ import (
 	"github.com/philippgille/ln-paywall/ln"
 )
 
-// stdOutLogger logs to stdou
+// stdOutLogger logs to stdout, while the defaul

@@ -12,4 +12,5 @@ import (
 	"github.com/philippgille/ln-paywall/ln"
 )
 
-// stdOutLogger logs to stdout, while the default log package loggers log
+// stdOutLogger logs to stdout, while the default log package loggers log to stderr.
+var stdOutL

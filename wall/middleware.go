@@ -12,4 +12,4 @@ import (
 	"github.com/philippgille/ln-paywall/ln"
 )
 
-// stdOutLogger logs to stdout, while the defaul
+// stdOutLogger logs to stdout, while the default log package loggers log

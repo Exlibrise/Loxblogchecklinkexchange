@@ -16,4 +16,5 @@ import (
 var stdOutLogger = log.New(os.Stdout, "", log.LstdFlags)
 
 // InvoiceOptions are the options for an invoice.
-type 
+type InvoiceOptions struct {
+	// Amount of Sato

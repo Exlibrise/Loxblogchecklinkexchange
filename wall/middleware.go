@@ -17,4 +17,4 @@ var stdOutLogger = log.New(os.Stdout, "", log.LstdFlags)
 
 // InvoiceOptions are the options for an invoice.
 type InvoiceOptions struct {
-	// Amount of Sato
+	// Amount of Satoshis you want to have paid f

@@ -18,4 +18,4 @@ var stdOutLogger = log.New(os.Stdout, "", log.LstdFlags)
 // InvoiceOptions are the options for an invoice.
 type InvoiceOptions struct {
 	// Amount of Satoshis you want to have paid for one API call.
-	// Val
+	// Values below 1 are automatica

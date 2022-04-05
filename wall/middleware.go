@@ -21,4 +21,5 @@ type InvoiceOptions struct {
 	// Values below 1 are automatically changed to the default value.
 	// Optional (1 by default).
 	Price int64
-	// Note to be shown on the invoi
+	// Note to be shown on the invoice,
+	// for example: "API cal

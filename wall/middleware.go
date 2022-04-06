@@ -23,4 +23,4 @@ type InvoiceOptions struct {
 	Price int64
 	// Note to be shown on the invoice,
 	// for example: "API call to api.example.com".
-	// Opt
+	// Optional ("" by default).

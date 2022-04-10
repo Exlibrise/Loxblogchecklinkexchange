@@ -24,3 +24,7 @@ type InvoiceOptions struct {
 	// Note to be shown on the invoice,
 	// for example: "API call to api.example.com".
 	// Optional ("" by default).
+	Memo string
+}
+
+// Def

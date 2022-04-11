@@ -27,4 +27,4 @@ type InvoiceOptions struct {
 	Memo string
 }
 
-// Def
+// DefaultInvoiceOptions p

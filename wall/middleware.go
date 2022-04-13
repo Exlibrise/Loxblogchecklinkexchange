@@ -27,4 +27,5 @@ type InvoiceOptions struct {
 	Memo string
 }
 
-// DefaultInvoiceOptions provides default values for 
+// DefaultInvoiceOptions provides default values for InvoiceOptions.
+var Defaul

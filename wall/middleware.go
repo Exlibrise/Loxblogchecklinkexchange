@@ -28,4 +28,4 @@ type InvoiceOptions struct {
 }
 
 // DefaultInvoiceOptions provides default values for InvoiceOptions.
-var Defaul
+var DefaultInvoiceOptions = 

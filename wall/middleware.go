@@ -30,3 +30,7 @@ type InvoiceOptions struct {
 // DefaultInvoiceOptions provides default values for InvoiceOptions.
 var DefaultInvoiceOptions = InvoiceOptions{
 	Price: 1,
+	Memo:  "API call",
+}
+
+/

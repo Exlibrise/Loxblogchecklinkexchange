@@ -33,4 +33,4 @@ var DefaultInvoiceOptions = InvoiceOptions{
 	Memo:  "API call",
 }
 
-/
+// StorageClient is an abstra

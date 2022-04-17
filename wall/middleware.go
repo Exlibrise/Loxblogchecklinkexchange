@@ -34,3 +34,4 @@ var DefaultInvoiceOptions = InvoiceOptions{
 }
 
 // StorageClient is an abstraction for different storage client implementations.
+// A storage client must 

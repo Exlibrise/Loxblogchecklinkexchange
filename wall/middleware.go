@@ -33,4 +33,4 @@ var DefaultInvoiceOptions = InvoiceOptions{
 	Memo:  "API call",
 }
 
-// StorageClient is an abstraction for different stora
+// StorageClient is an abstraction for different storage client implementations.

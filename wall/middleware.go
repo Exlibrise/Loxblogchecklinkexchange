@@ -37,4 +37,4 @@ var DefaultInvoiceOptions = InvoiceOptions{
 // A storage client must be able to store and retrieve invoiceMetaData objects.
 type StorageClient interface {
 	// Set stores the given invoiceMetaData for the given preimage hash.
-	Se
+	Set(string, interface{}) error

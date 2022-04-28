@@ -38,3 +38,4 @@ var DefaultInvoiceOptions = InvoiceOptions{
 type StorageClient interface {
 	// Set stores the given invoiceMetaData for the given preimage hash.
 	Set(string, interface{}) error
+	// Get retrieves the inv

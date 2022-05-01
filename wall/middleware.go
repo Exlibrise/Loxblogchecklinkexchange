@@ -39,4 +39,4 @@ type StorageClient interface {
 	// Set stores the given invoiceMetaData for the given preimage hash.
 	Set(string, interface{}) error
 	// Get retrieves the invoiceMetaData for the given preimage hash
-	// and populates the fields of
+	// and populates the fields of the object that 

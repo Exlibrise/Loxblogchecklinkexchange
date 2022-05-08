@@ -40,4 +40,5 @@ type StorageClient interface {
 	Set(string, interface{}) error
 	// Get retrieves the invoiceMetaData for the given preimage hash
 	// and populates the fields of the object that the passed pointer
-	// points to with the values of the retrieved object's 
+	// points to with the values of the retrieved object's values.
+	// If no object is

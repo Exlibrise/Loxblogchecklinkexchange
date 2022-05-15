@@ -41,4 +41,5 @@ type StorageClient interface {
 	// Get retrieves the invoiceMetaData for the given preimage hash
 	// and populates the fields of the object that the passed pointer
 	// points to with the values of the retrieved object's values.
-	// If no object is found it returns (false, ni
+	// If no object is found it returns (false, nil).
+	Get(string, interfac

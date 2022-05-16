@@ -42,4 +42,7 @@ type StorageClient interface {
 	// and populates the fields of the object that the passed pointer
 	// points to with the values of the retrieved object's values.
 	// If no object is found it returns (false, nil).
-	Get(string, interfac
+	Get(string, interface{}) (bool, error)
+}
+
+// L

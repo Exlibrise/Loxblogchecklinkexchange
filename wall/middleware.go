@@ -45,4 +45,4 @@ type StorageClient interface {
 	Get(string, interface{}) (bool, error)
 }
 
-// L
+// LNclient is an abstraction

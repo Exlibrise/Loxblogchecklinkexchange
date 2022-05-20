@@ -45,4 +45,4 @@ type StorageClient interface {
 	Get(string, interface{}) (bool, error)
 }
 
-// LNclient is an abstraction of a client that connects to a Lightning Networ
+// LNclient is an abstraction of a client that connects to a Lightning Network node implementation (li

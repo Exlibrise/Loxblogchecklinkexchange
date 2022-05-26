@@ -46,4 +46,6 @@ type StorageClient interface {
 }
 
 // LNclient is an abstraction of a client that connects to a Lightning Network node implementation (like lnd, c-lightning and eclair)
-// and provides the methods required by the paywall
+// and provides the methods required by the paywall.
+type LNclient interface {
+	// G

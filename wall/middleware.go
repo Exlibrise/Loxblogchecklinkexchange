@@ -48,4 +48,4 @@ type StorageClient interface {
 // LNclient is an abstraction of a client that connects to a Lightning Network node implementation (like lnd, c-lightning and eclair)
 // and provides the methods required by the paywall.
 type LNclient interface {
-	// GenerateInvoice generates a new invoice based on the price in Satoshis and with th
+	// GenerateInvoice generates a new invoice based on the price in Satoshis and with the given memo.

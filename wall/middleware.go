@@ -49,4 +49,5 @@ type StorageClient interface {
 // and provides the methods required by the paywall.
 type LNclient interface {
 	// GenerateInvoice generates a new invoice based on the price in Satoshis and with the given memo.
-	GenerateInvoice(int64, string
+	GenerateInvoice(int64, string) (ln.Invoice, error)
+	// C

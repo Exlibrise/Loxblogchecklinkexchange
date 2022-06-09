@@ -50,4 +50,5 @@ type StorageClient interface {
 type LNclient interface {
 	// GenerateInvoice generates a new invoice based on the price in Satoshis and with the given memo.
 	GenerateInvoice(int64, string) (ln.Invoice, error)
-	// CheckInvoice checks if the invoice was settled, given an LN node implementation de
+	// CheckInvoice checks if the invoice was settled, given an LN node implementation dependent ID.
+	// For 

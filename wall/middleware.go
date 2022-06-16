@@ -53,4 +53,5 @@ type LNclient interface {
 	// CheckInvoice checks if the invoice was settled, given an LN node implementation dependent ID.
 	// For example lnd uses the payment hash a.k.a. preimage hash as ID, while Lightning Charge
 	// uses a randomly generated string as ID.
-	CheckIn
+	CheckInvoice(string) (bool, error)
+}

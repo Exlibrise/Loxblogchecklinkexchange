@@ -55,3 +55,5 @@ type LNclient interface {
 	// uses a randomly generated string as ID.
 	CheckInvoice(string) (bool, error)
 }
+
+// invoiceMetaData is data th

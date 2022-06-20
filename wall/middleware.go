@@ -56,4 +56,5 @@ type LNclient interface {
 	CheckInvoice(string) (bool, error)
 }
 
-// invoiceMetaData is data that's required to prevent clients from cheati
+// invoiceMetaData is data that's required to prevent clients from cheating
+// (e.g. have multiple reques

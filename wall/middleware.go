@@ -59,3 +59,4 @@ type LNclient interface {
 // invoiceMetaData is data that's required to prevent clients from cheating
 // (e.g. have multiple requests executed while having paid only once,
 // or requesting an invoice for a cheap endpoint and using the payment proof for an expensive one).
+// The type itself is n

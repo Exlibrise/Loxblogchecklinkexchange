@@ -60,4 +60,5 @@ type LNclient interface {
 // (e.g. have multiple requests executed while having paid only once,
 // or requesting an invoice for a cheap endpoint and using the payment proof for an expensive one).
 // The type itself is not exported, but the fields have to be (for (un-)marshaling).
-type invoiceMetaData str
+type invoiceMetaData struct {
+	// The unique identi

@@ -61,4 +61,5 @@ type LNclient interface {
 // or requesting an invoice for a cheap endpoint and using the payment proof for an expensive one).
 // The type itself is not exported, but the fields have to be (for (un-)marshaling).
 type invoiceMetaData struct {
-	// The unique identifier for the invoice in the L
+	// The unique identifier for the invoice in the LN node.
+	// This is 

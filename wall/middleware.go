@@ -62,4 +62,4 @@ type LNclient interface {
 // The type itself is not exported, but the fields have to be (for (un-)marshaling).
 type invoiceMetaData struct {
 	// The unique identifier for the invoice in the LN node.
-	// This is NOT the ID that's used for storing the
+	// This is NOT the ID that's used for storing the metadata in the storage.

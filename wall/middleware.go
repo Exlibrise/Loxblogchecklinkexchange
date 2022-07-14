@@ -63,4 +63,4 @@ type LNclient interface {
 type invoiceMetaData struct {
 	// The unique identifier for the invoice in the LN node.
 	// This is NOT the ID that's used for storing the metadata in the storage.
-	// Instead, it's the ID used
+	// Instead, it's the ID used to retrieve info abou

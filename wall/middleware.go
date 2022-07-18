@@ -64,4 +64,5 @@ type invoiceMetaData struct {
 	// The unique identifier for the invoice in the LN node.
 	// This is NOT the ID that's used for storing the metadata in the storage.
 	// Instead, it's the ID used to retrieve info about an invoice from the LN node.
-	// The different implementations use different values a
+	// The different implementations use different values as ID, for example
+	// lnd 

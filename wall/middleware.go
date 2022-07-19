@@ -65,4 +65,4 @@ type invoiceMetaData struct {
 	// This is NOT the ID that's used for storing the metadata in the storage.
 	// Instead, it's the ID used to retrieve info about an invoice from the LN node.
 	// The different implementations use different values as ID, for example
-	// lnd 
+	// lnd uses the payment hash 

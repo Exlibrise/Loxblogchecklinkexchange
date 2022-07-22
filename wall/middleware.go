@@ -66,4 +66,4 @@ type invoiceMetaData struct {
 	// Instead, it's the ID used to retrieve info about an invoice from the LN node.
 	// The different implementations use different values as ID, for example
 	// lnd uses the payment hash a.k.a. preimage hash as ID, while Lightning Charge
-	// uses its own 
+	// uses its own randomly generated s

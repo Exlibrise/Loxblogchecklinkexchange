@@ -69,4 +69,4 @@ type invoiceMetaData struct {
 	// uses its own randomly generated string as ID.
 	//
 	// The ID (or rather *key*) used for storing the metadata in the storage
-	// is the payme
+	// is the payment hash of the invoi

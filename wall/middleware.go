@@ -68,4 +68,5 @@ type invoiceMetaData struct {
 	// lnd uses the payment hash a.k.a. preimage hash as ID, while Lightning Charge
 	// uses its own randomly generated string as ID.
 	//
-	// The ID (or rather *key*) used for storing the metadata in the 
+	// The ID (or rather *key*) used for storing the metadata in the storage
+	// is the payme

@@ -70,4 +70,4 @@ type invoiceMetaData struct {
 	//
 	// The ID (or rather *key*) used for storing the metadata in the storage
 	// is the payment hash of the invoice, because the client sends the preimage
-	// (or in the future 
+	// (or in the future also its hash) in the final

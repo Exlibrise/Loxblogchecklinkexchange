@@ -73,4 +73,6 @@ type invoiceMetaData struct {
 	// (or in the future also its hash) in the final request and we must be able
 	// to look up the metadata with that key.
 	ImplDepID string
-	Method   
+	Method    string
+	Path      string
+	Used 

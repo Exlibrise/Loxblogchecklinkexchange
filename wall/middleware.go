@@ -78,4 +78,4 @@ type invoiceMetaData struct {
 	Used      bool
 }
 
-type fr
+type frameworkAbstraction interfa

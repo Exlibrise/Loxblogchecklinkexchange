@@ -78,4 +78,5 @@ type invoiceMetaData struct {
 	Used      bool
 }
 
-type frameworkAbstraction interfa
+type frameworkAbstraction interface {
+	// getPreimageFromHeader re

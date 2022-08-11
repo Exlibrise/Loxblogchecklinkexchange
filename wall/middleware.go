@@ -80,4 +80,5 @@ type invoiceMetaData struct {
 
 type frameworkAbstraction interface {
 	// getPreimageFromHeader returns the content of the "X-Preimage" header.
-	getP
+	getPreimageFromHeader() string
+	

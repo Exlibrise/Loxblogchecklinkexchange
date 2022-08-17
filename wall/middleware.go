@@ -82,4 +82,5 @@ type frameworkAbstraction interface {
 	// getPreimageFromHeader returns the content of the "X-Preimage" header.
 	getPreimageFromHeader() string
 	// respondWithError sends a response with the given message and status code.
-	respondWithError(error, s
+	respondWithError(error, string, int)
+	// getHTTPreques

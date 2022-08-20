@@ -83,4 +83,4 @@ type frameworkAbstraction interface {
 	getPreimageFromHeader() string
 	// respondWithError sends a response with the given message and status code.
 	respondWithError(error, string, int)
-	// getHTTPrequest returns a pointer to th
+	// getHTTPrequest returns a pointer to the current http.Request.

@@ -84,3 +84,4 @@ type frameworkAbstraction interface {
 	// respondWithError sends a response with the given message and status code.
 	respondWithError(error, string, int)
 	// getHTTPrequest returns a pointer to the current http.Request.
+	getHTTPrequest() *http.Request

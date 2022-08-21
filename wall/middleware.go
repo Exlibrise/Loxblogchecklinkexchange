@@ -85,3 +85,4 @@ type frameworkAbstraction interface {
 	respondWithError(error, string, int)
 	// getHTTPrequest returns a pointer to the current http.Request.
 	getHTTPrequest() *http.Request
+	// respondWithInvoice sends

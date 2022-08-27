@@ -86,4 +86,4 @@ type frameworkAbstraction interface {
 	// getHTTPrequest returns a pointer to the current http.Request.
 	getHTTPrequest() *http.Request
 	// respondWithInvoice sends a response with the given headers, status code and invoice string.
-	respondWithInvoice(map
+	respondWithInvoice(map[string]string, int, []byte)

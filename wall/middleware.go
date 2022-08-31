@@ -87,4 +87,5 @@ type frameworkAbstraction interface {
 	getHTTPrequest() *http.Request
 	// respondWithInvoice sends a response with the given headers, status code and invoice string.
 	respondWithInvoice(map[string]string, int, []byte)
-	// next moves to the next handler, which might be another middleware or the actual req
+	// next moves to the next handler, which might be another middleware or the actual request handler.
+	// This m

@@ -89,4 +89,5 @@ type frameworkAbstraction interface {
 	respondWithInvoice(map[string]string, int, []byte)
 	// next moves to the next handler, which might be another middleware or the actual request handler.
 	// This method is only called when all previous operations were successful (e.g. the invoice was paid properly).
-	// An error only needs to be returned if the specific web framework requires middle
+	// An error only needs to be returned if the specific web framework requires middlewares to return one,
+	//

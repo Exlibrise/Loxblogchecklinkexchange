@@ -94,4 +94,4 @@ type frameworkAbstraction interface {
 	next() error
 }
 
-f
+func commonHandler(fa fra

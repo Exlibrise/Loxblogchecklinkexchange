@@ -94,4 +94,4 @@ type frameworkAbstraction interface {
 	next() error
 }
 
-func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnC
+func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnClient LNclient, storag

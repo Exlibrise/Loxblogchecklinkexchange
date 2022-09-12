@@ -95,4 +95,4 @@ type frameworkAbstraction interface {
 }
 
 func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnClient LNclient, storageClient StorageClient) error {
-	// Check if the re
+	// Check if the request contains a header 

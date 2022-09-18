@@ -96,4 +96,5 @@ type frameworkAbstraction interface {
 
 func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnClient LNclient, storageClient StorageClient) error {
 	// Check if the request contains a header with the preimage that we need to check if the requester paid
-	preimageHex := fa.getPreimageFromHea
+	preimageHex := fa.getPreimageFromHeader()
+	if preimageHex == "

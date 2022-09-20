@@ -98,4 +98,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 	// Check if the request contains a header with the preimage that we need to check if the requester paid
 	preimageHex := fa.getPreimageFromHeader()
 	if preimageHex == "" {
-		// Generate the
+		// Generate the invoice
+		invoice, err 

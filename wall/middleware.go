@@ -99,4 +99,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 	preimageHex := fa.getPreimageFromHeader()
 	if preimageHex == "" {
 		// Generate the invoice
-		invoice, err := lnClient.GenerateIn
+		invoice, err := lnClient.GenerateInvoice(invoiceOptions.Price, inv

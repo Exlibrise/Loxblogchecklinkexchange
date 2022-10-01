@@ -102,4 +102,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 		invoice, err := lnClient.GenerateInvoice(invoiceOptions.Price, invoiceOptions.Memo)
 		if err != nil {
 			errorMsg := fmt.Sprintf("Couldn't generate invoice: %+v", err)
-			l
+			log.Println(errorMsg)
+			fa.r

@@ -103,4 +103,6 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 		if err != nil {
 			errorMsg := fmt.Sprintf("Couldn't generate invoice: %+v", err)
 			log.Println(errorMsg)
-			fa.respondWithError(err, errorMsg, http.StatusInternalServerErr
+			fa.respondWithError(err, errorMsg, http.StatusInternalServerError)
+		} else {
+			// Cache the

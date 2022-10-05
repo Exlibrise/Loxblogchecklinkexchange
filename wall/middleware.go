@@ -106,4 +106,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			fa.respondWithError(err, errorMsg, http.StatusInternalServerError)
 		} else {
 			// Cache the invoice metadata
-			me
+			metadata := invoiceMetaData{
+				Imp

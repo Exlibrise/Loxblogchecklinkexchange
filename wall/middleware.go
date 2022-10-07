@@ -107,4 +107,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 		} else {
 			// Cache the invoice metadata
 			metadata := invoiceMetaData{
-				Imp
+				ImplDepID: invoice.ImplDepID,
+		

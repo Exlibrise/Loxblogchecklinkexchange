@@ -108,4 +108,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			// Cache the invoice metadata
 			metadata := invoiceMetaData{
 				ImplDepID: invoice.ImplDepID,
-		
+				Method:    fa.getHTTPreq

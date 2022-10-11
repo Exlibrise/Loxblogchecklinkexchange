@@ -109,4 +109,6 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			metadata := invoiceMetaData{
 				ImplDepID: invoice.ImplDepID,
 				Method:    fa.getHTTPrequest().Method,
-				Path:      fa.getHTTPrequest().URL.
+				Path:      fa.getHTTPrequest().URL.Path,
+			}
+			storageClient

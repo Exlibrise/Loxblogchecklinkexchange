@@ -111,4 +111,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 				Method:    fa.getHTTPrequest().Method,
 				Path:      fa.getHTTPrequest().URL.Path,
 			}
-			storageClient
+			storageClient.Set(invoice.PaymentH

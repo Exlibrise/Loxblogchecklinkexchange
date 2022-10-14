@@ -113,4 +113,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			}
 			storageClient.Set(invoice.PaymentHash, metadata)
 
-			// Respond
+			// Respond with the invoice
+			std

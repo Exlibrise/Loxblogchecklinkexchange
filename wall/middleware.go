@@ -114,4 +114,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			storageClient.Set(invoice.PaymentHash, metadata)
 
 			// Respond with the invoice
-			stdOutLogger.Printf("Sending invoice in response: %v
+			stdOutLogger.Printf("Sending invoice in response: %v", invoice.PaymentReque

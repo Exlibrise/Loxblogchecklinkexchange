@@ -116,4 +116,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			// Respond with the invoice
 			stdOutLogger.Printf("Sending invoice in response: %v", invoice.PaymentRequest)
 			headers := make(map[string]string)
-			head
+			headers["Content-Typ

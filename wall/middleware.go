@@ -117,4 +117,6 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			stdOutLogger.Printf("Sending invoice in response: %v", invoice.PaymentRequest)
 			headers := make(map[string]string)
 			headers["Content-Type"] = "application/vnd.lightning.bolt11"
-			fa.respondWithInvoice(headers, http.StatusPaymentRequired, []byte(invoice.PaymentReq
+			fa.respondWithInvoice(headers, http.StatusPaymentRequired, []byte(invoice.PaymentRequest))
+		}
+	} els

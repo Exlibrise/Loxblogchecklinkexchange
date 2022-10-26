@@ -119,4 +119,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			headers["Content-Type"] = "application/vnd.lightning.bolt11"
 			fa.respondWithInvoice(headers, http.StatusPaymentRequired, []byte(invoice.PaymentRequest))
 		}
-	} els
+	} else {
+		// Check if 

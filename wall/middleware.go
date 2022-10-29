@@ -120,4 +120,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			fa.respondWithInvoice(headers, http.StatusPaymentRequired, []byte(invoice.PaymentRequest))
 		}
 	} else {
-		// Check if the provided preimage belongs to 
+		// Check if the provided preimage belongs to a settled API payme

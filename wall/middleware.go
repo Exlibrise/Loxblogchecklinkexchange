@@ -120,4 +120,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			fa.respondWithInvoice(headers, http.StatusPaymentRequired, []byte(invoice.PaymentRequest))
 		}
 	} else {
-		// Check if the provided preimage belongs to a settled API payment invoice and that it wasn't already used. Also store used preimages
+		// Check if the provided preimage belongs to a settled API payment invoice and that it wasn't already used. Also store used preimages.
+		invalidPreimageMsg, err :

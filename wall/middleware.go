@@ -124,4 +124,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 		invalidPreimageMsg, err := handlePreimage(fa.getHTTPrequest(), storageClient, lnClient)
 		if err != nil {
 			errorMsg := fmt.Sprintf("An error occurred during checking the preimage: %+v", err)
-			log.Printf("%v
+			log.Printf("%v\n", errorMsg)
+			fa.respo

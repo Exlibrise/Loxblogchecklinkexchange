@@ -126,4 +126,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			errorMsg := fmt.Sprintf("An error occurred during checking the preimage: %+v", err)
 			log.Printf("%v\n", errorMsg)
 			fa.respondWithError(err, errorMsg, http.StatusInternalServerError)
-		} else if invalidPreimageMsg !
+		} else if invalidPreimageMsg != "" {
+			log.Pri

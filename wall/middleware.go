@@ -128,4 +128,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			fa.respondWithError(err, errorMsg, http.StatusInternalServerError)
 		} else if invalidPreimageMsg != "" {
 			log.Printf("%v: %v\n", invalidPreimageMsg, preimageHex)
-			fa.respondWithError(nil
+			fa.respondWithError(nil, invalidPreimageMsg, http.

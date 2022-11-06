@@ -130,4 +130,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			log.Printf("%v: %v\n", invalidPreimageMsg, preimageHex)
 			fa.respondWithError(nil, invalidPreimageMsg, http.StatusBadRequest)
 		} else {
-			// The preimage was valid (has a corresponding + settled
+			// The preimage was valid (has a corresponding + settled invoice, wasn't u

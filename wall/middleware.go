@@ -131,4 +131,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			fa.respondWithError(nil, invalidPreimageMsg, http.StatusBadRequest)
 		} else {
 			// The preimage was valid (has a corresponding + settled invoice, wasn't used before etc.). Continue to next handler.
-			preimageHash, err := l
+			preimageHash, err := ln.HashPreimage(pre

@@ -132,4 +132,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 		} else {
 			// The preimage was valid (has a corresponding + settled invoice, wasn't used before etc.). Continue to next handler.
 			preimageHash, err := ln.HashPreimage(preimageHex)
-			if err ==
+			if err == nil {
+				stdOutLogger.Prin

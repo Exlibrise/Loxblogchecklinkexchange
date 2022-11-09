@@ -138,3 +138,7 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			err = fa.next()
 			if err != nil {
 				return err
+			}
+		}
+	}
+	return 

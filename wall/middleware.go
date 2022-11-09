@@ -145,4 +145,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 }
 
 // handlePreimage does the following:
-// 1) V
+// 1) Validate the preimage format (enc

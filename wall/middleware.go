@@ -144,4 +144,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 	return nil
 }
 
-// handlePreimage
+// handlePreimage does the following:
+// 1) V

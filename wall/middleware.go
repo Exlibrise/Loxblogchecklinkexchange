@@ -135,4 +135,6 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 			if err == nil {
 				stdOutLogger.Printf("The provided preimage is valid. Continuing to the next handler. Preimage hash: %v\n", preimageHash)
 			}
-			err = fa
+			err = fa.next()
+			if err != nil {
+				return err

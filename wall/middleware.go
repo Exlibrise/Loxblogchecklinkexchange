@@ -146,4 +146,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 
 // handlePreimage does the following:
 // 1) Validate the preimage format (encoding, length)
-// 2) Check if the 
+// 2) Check if the invoice metadata exists i

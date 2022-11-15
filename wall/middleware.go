@@ -151,4 +151,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 // 4) Check if the payment hash was already used in a previous request
 // 5) Check if the invoice was settled
 // 6) Mark the invoice metadata as used, so it can't be used in future requests
-// Note: The payment hash (a.k.a. preima
+// Note: The payment hash (a.k.a. preimage hash) can be calcu

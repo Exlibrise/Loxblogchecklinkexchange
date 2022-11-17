@@ -153,4 +153,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 // 6) Mark the invoice metadata as used, so it can't be used in future requests
 // Note: The payment hash (a.k.a. preimage hash) can be calculated from the preimage.
 //
-// Returns a string 
+// Returns a string and an error.
+// The str

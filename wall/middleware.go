@@ -155,4 +155,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 //
 // Returns a string and an error.
 // The string contains detailed info about the result in case the preimage is invalid
-// (bad encoding, HTTP verb does
+// (bad encoding, HTTP verb doesn't match, already used et

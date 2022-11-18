@@ -154,4 +154,5 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 // Note: The payment hash (a.k.a. preimage hash) can be calculated from the preimage.
 //
 // Returns a string and an error.
-// The string contains detailed info about the result in case the
+// The string contains detailed info about the result in case the preimage is invalid
+// (bad e

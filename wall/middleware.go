@@ -157,4 +157,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 // The string contains detailed info about the result in case the preimage is invalid
 // (bad encoding, HTTP verb doesn't match, already used etc., generally a client-side error).
 // The error is only non-nil if a server-side error occurred during the check (like the LN node can't be reached).
-// The preimage is only valid if the string 
+// The preimage is only valid if the string is empty and the error is

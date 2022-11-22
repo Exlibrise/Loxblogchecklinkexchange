@@ -159,4 +159,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 // The error is only non-nil if a server-side error occurred during the check (like the LN node can't be reached).
 // The preimage is only valid if the string is empty and the error is nil.
 func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNclient) (string, error) {
-	// 1) Validate the preimage f
+	// 1) Validate the preimage format (encoding, length)

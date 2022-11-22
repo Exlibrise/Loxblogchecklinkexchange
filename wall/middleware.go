@@ -158,4 +158,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 // (bad encoding, HTTP verb doesn't match, already used etc., generally a client-side error).
 // The error is only non-nil if a server-side error occurred during the check (like the LN node can't be reached).
 // The preimage is only valid if the string is empty and the error is nil.
-func handlePreimage(req *http.Request, storageClient StorageClient, l
+func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNclient) 

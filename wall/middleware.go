@@ -160,3 +160,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 // The preimage is only valid if the string is empty and the error is nil.
 func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNclient) (string, error) {
 	// 1) Validate the preimage format (encoding, length)
+	preimage := req.Header.Get("X-P

@@ -162,3 +162,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	// 1) Validate the preimage format (encoding, length)
 	preimage := req.Header.Get("X-Preimage")
 	errString := validatePreimageFormat(preimage)
+	if errString != 

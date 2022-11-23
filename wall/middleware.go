@@ -161,4 +161,4 @@ func commonHandler(fa frameworkAbstraction, invoiceOptions InvoiceOptions, lnCli
 func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNclient) (string, error) {
 	// 1) Validate the preimage format (encoding, length)
 	preimage := req.Header.Get("X-Preimage")
-	errString :=
+	errString := validatePrei

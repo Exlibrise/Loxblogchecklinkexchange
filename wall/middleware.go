@@ -166,4 +166,5 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 		return errString, nil
 	}
 
-	// Calculate preimage hash (a.k.a. payment hash) f
+	// Calculate preimage hash (a.k.a. payment hash) from preimage.
+	// Ignore er

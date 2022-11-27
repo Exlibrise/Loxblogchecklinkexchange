@@ -167,4 +167,5 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	}
 
 	// Calculate preimage hash (a.k.a. payment hash) from preimage.
-	// Ignore error because we already validated the
+	// Ignore error because we already validated the preimage format.
+	preim

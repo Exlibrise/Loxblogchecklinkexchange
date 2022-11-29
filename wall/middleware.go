@@ -171,4 +171,5 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	preimageHash, _ := ln.HashPreimage(preimage)
 
 	// Retrieve invoice metadata from storage
-	metaData := new(i
+	metaData := new(invoiceMetaData)
+	found, err := sto

@@ -170,4 +170,5 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	// Ignore error because we already validated the preimage format.
 	preimageHash, _ := ln.HashPreimage(preimage)
 
-	// Retrieve invoice metadata from sto
+	// Retrieve invoice metadata from storage
+	metaData := new(i

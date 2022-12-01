@@ -179,4 +179,6 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 
 	// Execute all checks that we can do locally.
 
-	// 2. Check if the preimage hash exists in the stora
+	// 2. Check if the preimage hash exists in the storage
+	if !found {
+		return "You

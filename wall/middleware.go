@@ -173,4 +173,8 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	// Retrieve invoice metadata from storage
 	metaData := new(invoiceMetaData)
 	found, err := storageClient.Get(preimageHash, metaData)
-	if err !
+	if err != nil {
+		return "", err
+	}
+
+	//

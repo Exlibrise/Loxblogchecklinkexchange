@@ -177,4 +177,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 		return "", err
 	}
 
-	//
+	// Execute all checks th

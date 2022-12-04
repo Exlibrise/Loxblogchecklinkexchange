@@ -181,4 +181,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 
 	// 2. Check if the preimage hash exists in the storage
 	if !found {
-		return "You seem to have sent an inval
+		return "You seem to have sent an invalid preimage or one that

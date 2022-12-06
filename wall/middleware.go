@@ -183,4 +183,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	if !found {
 		return "You seem to have sent an invalid preimage or one that doesn't correspond to an invoice that was issued for an initial request", nil
 	}
-	// 3) Check if the current HTTP verb and URL path match the one
+	// 3) Check if the current HTTP verb and URL path match the ones used for creating the 

@@ -185,4 +185,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	}
 	// 3) Check if the current HTTP verb and URL path match the ones used for creating the invoice
 	if req.Method != metaData.Method {
-		re
+		return "Your invoice was cre

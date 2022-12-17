@@ -190,4 +190,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	if req.URL.Path != metaData.Path {
 		return "Your invoice was created for the path \"" + metaData.Path + "\", but you're sending a request to \"" + req.URL.Path + "\"", nil
 	}
-	// 4) Check if the preimag
+	// 4) Check if the preimage hash was alrea

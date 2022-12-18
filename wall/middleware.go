@@ -191,4 +191,5 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 		return "Your invoice was created for the path \"" + metaData.Path + "\", but you're sending a request to \"" + req.URL.Path + "\"", nil
 	}
 	// 4) Check if the preimage hash was already used in a previous request
-	if metaData.Used
+	if metaData.Used {
+		return "You already

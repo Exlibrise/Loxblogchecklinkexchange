@@ -195,4 +195,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 		return "You already sent a request with the same preimage. You have to pay a new invoice for and include the corresponding preimage in each request.", nil
 	}
 
-	// 5)
+	// 5) Check if the invoice w

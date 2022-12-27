@@ -192,4 +192,7 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	}
 	// 4) Check if the preimage hash was already used in a previous request
 	if metaData.Used {
-		return "You already sent a request with the same preimage. You have to pay a new invoice for and include the corresponding preimage in each reque
+		return "You already sent a request with the same preimage. You have to pay a new invoice for and include the corresponding preimage in each request.", nil
+	}
+
+	// 5)

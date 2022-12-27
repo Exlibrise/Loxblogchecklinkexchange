@@ -197,3 +197,5 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 
 	// 5) Check if the invoice was settled
 	settled, err := lnClient.CheckInvoice(metaData.ImplDepID)
+	if err != nil {
+		// Returning 

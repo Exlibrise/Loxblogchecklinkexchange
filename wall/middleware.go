@@ -201,4 +201,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 		// Returning a non-nil error leads to an "internal server error", but in some cases it's a "bad request".
 		// Handle those cases here.
 		// TODO: Checks should be done in a more robust and elegant way
-		if reflect
+		if reflect.TypeOf(err).Name() == "

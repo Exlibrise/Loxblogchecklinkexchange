@@ -199,4 +199,5 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	settled, err := lnClient.CheckInvoice(metaData.ImplDepID)
 	if err != nil {
 		// Returning a non-nil error leads to an "internal server error", but in some cases it's a "bad request".
-		// Handle those cases here
+		// Handle those cases here.
+		// TODO: Checks sho

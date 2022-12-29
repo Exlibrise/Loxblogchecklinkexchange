@@ -203,4 +203,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 		// TODO: Checks should be done in a more robust and elegant way
 		if reflect.TypeOf(err).Name() == "InvalidByteError" ||
 			err == hex.ErrLength {
-		
+			return "The provided

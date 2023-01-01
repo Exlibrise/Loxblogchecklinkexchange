@@ -205,4 +205,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 			err == hex.ErrLength {
 			return "The provided preimage isn't properly hex encoded", nil
 		} else if strings.Contains(err.Error(), "unable to locate invoice") {
-			ret
+			return "No corresponding i

@@ -207,4 +207,5 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 		} else if strings.Contains(err.Error(), "unable to locate invoice") {
 			return "No corresponding invoice was found for the provided preimage", nil
 		} else {
-	
+			return "", err
+		

@@ -211,3 +211,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 		}
 	}
 	if !settled {
+		return "You somehow obt

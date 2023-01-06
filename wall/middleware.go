@@ -208,4 +208,6 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 			return "No corresponding invoice was found for the provided preimage", nil
 		} else {
 			return "", err
-		
+		}
+	}
+	if !settled {

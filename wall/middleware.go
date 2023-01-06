@@ -214,4 +214,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 		return "You somehow obtained the preimage of the invoice, but the invoice is not settled yet", nil
 	}
 
-	// 6) Mark
+	// 6) Mark the invoice as used, so it ca

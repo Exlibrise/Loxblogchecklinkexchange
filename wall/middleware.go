@@ -212,3 +212,6 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	}
 	if !settled {
 		return "You somehow obtained the preimage of the invoice, but the invoice is not settled yet", nil
+	}
+
+	// 6) Mark

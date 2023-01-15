@@ -218,4 +218,7 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	metaData.Used = true
 	err = storageClient.Set(preimageHash, *metaData)
 	if err != nil {
-		return "
+		return "", err
+	}
+
+	return "", nil

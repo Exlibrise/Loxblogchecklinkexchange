@@ -216,4 +216,6 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 
 	// 6) Mark the invoice as used, so it can't be used in future requests
 	metaData.Used = true
-	err = storageClient.Set(preimageHash, *metaD
+	err = storageClient.Set(preimageHash, *metaData)
+	if err != nil {
+		return "

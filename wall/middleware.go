@@ -224,4 +224,5 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 	return "", nil
 }
 
-func validatePreimageFormat(preimageHex string) str
+func validatePreimageFormat(preimageHex string) string {
+	if len(preimageHex) !

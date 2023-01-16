@@ -226,4 +226,4 @@ func handlePreimage(req *http.Request, storageClient StorageClient, lnClient LNc
 
 func validatePreimageFormat(preimageHex string) string {
 	if len(preimageHex) != 64 {
-		return "The provi
+		return "The provided preimage isn't properly

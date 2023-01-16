@@ -228,4 +228,4 @@ func validatePreimageFormat(preimageHex string) string {
 	if len(preimageHex) != 64 {
 		return "The provided preimage isn't properly formatted"
 	}
-	_, err :=
+	_, err := hex.DecodeString

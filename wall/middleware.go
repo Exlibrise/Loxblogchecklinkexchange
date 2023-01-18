@@ -231,4 +231,4 @@ func validatePreimageFormat(preimageHex string) string {
 	_, err := hex.DecodeString(preimageHex)
 	if err != nil {
 		// Either err == hex.ErrLength or err == hex.InvalidByteError.
-		return "The provid
+		return "The provided preimage isn't properly 

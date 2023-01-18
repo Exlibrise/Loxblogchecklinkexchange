@@ -230,4 +230,4 @@ func validatePreimageFormat(preimageHex string) string {
 	}
 	_, err := hex.DecodeString(preimageHex)
 	if err != nil {
-		// Either er
+		// Either err == hex.ErrLength or err == hex.Invalid

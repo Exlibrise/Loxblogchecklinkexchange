@@ -229,4 +229,5 @@ func validatePreimageFormat(preimageHex string) string {
 		return "The provided preimage isn't properly formatted"
 	}
 	_, err := hex.DecodeString(preimageHex)
-	if err !
+	if err != nil {
+		// Either er

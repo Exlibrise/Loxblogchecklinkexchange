@@ -233,4 +233,7 @@ func validatePreimageFormat(preimageHex string) string {
 		// Either err == hex.ErrLength or err == hex.InvalidByteError.
 		return "The provided preimage isn't properly hex encoded"
 	}
-	ret
+	return ""
+}
+
+func assignDefa

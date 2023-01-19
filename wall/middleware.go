@@ -238,4 +238,5 @@ func validatePreimageFormat(preimageHex string) string {
 
 func assignDefaultValues(invoiceOptions InvoiceOptions) InvoiceOptions {
 	// InvoiceOptions
-	if invoiceOptions.
+	if invoiceOptions.Price <= 0 {
+		invoiceOptions.Pr

@@ -236,4 +236,5 @@ func validatePreimageFormat(preimageHex string) string {
 	return ""
 }
 
-func assignDefaultValues(invoiceOptions InvoiceOptions) In
+func assignDefaultValues(invoiceOptions InvoiceOptions) InvoiceOptions {
+	// Invoi

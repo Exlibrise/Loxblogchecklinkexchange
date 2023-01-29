@@ -241,4 +241,6 @@ func assignDefaultValues(invoiceOptions InvoiceOptions) InvoiceOptions {
 	if invoiceOptions.Price <= 0 {
 		invoiceOptions.Price = DefaultInvoiceOptions.Price
 	}
-	// Empty M
+	// Empty Memo is okay.
+
+	return invoi

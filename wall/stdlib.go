@@ -4,4 +4,4 @@ import (
 	"net/http"
 )
 
-// NewHandlerFuncMiddlewar
+// NewHandlerFuncMiddleware returns a function whic

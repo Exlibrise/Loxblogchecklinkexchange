@@ -243,4 +243,5 @@ func assignDefaultValues(invoiceOptions InvoiceOptions) InvoiceOptions {
 	}
 	// Empty Memo is okay.
 
-	return invoi
+	return invoiceOptions
+}

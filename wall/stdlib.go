@@ -11,4 +11,4 @@ func NewHandlerFuncMiddleware(invoiceOptions InvoiceOptions, lnClient LNclient, 
 	}
 }
 
-// NewHandlerMiddleware returns a function 
+// NewHandlerMiddleware returns a function which you can use within a

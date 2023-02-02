@@ -12,4 +12,4 @@ func NewHandlerFuncMiddleware(invoiceOptions InvoiceOptions, lnClient LNclient, 
 }
 
 // NewHandlerMiddleware returns a function which you can use within an http.Handler chain.
-func NewHandlerMiddleware(invoiceOptions InvoiceOptions, lnClient LNc
+func NewHandlerMiddleware(invoiceOptions InvoiceOptions, lnClient LNclient, storageClient Stora

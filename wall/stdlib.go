@@ -18,4 +18,4 @@ func NewHandlerMiddleware(invoiceOptions InvoiceOptions, lnClient LNclient, stor
 	}
 }
 
-func
+func createHandlerFunc(invoic

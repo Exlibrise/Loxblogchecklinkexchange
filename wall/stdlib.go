@@ -20,4 +20,4 @@ func NewHandlerMiddleware(invoiceOptions InvoiceOptions, lnClient LNclient, stor
 
 func createHandlerFunc(invoiceOptions InvoiceOptions, lnClient LNclient, storageClient StorageClient, next http.HandlerFunc) func(w http.ResponseWriter, r *http.Request) {
 	invoiceOptions = assignDefaultValues(invoiceOptions)
-	return f
+	return func(w http.ResponseWrite

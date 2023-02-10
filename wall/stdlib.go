@@ -23,4 +23,5 @@ func createHandlerFunc(invoiceOptions InvoiceOptions, lnClient LNclient, storage
 	return func(w http.ResponseWriter, r *http.Request) {
 		fa := stdlibHTTP{
 			w:           w,
-			r:         
+			r:           r,
+			nextHandler: nex

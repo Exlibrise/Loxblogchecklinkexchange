@@ -26,4 +26,4 @@ func createHandlerFunc(invoiceOptions InvoiceOptions, lnClient LNclient, storage
 			r:           r,
 			nextHandler: next,
 		}
-		commonHandler(fa, i
+		commonHandler(fa, invoiceOptions, lnClient, 

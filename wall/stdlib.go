@@ -24,4 +24,6 @@ func createHandlerFunc(invoiceOptions InvoiceOptions, lnClient LNclient, storage
 		fa := stdlibHTTP{
 			w:           w,
 			r:           r,
-			nextHandler: nex
+			nextHandler: next,
+		}
+		commonHandler(fa, i

@@ -31,4 +31,5 @@ func createHandlerFunc(invoiceOptions InvoiceOptions, lnClient LNclient, storage
 }
 
 type stdlibHTTP struct {
-	w     
+	w           http.ResponseWriter
+	

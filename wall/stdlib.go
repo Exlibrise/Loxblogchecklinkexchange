@@ -30,4 +30,5 @@ func createHandlerFunc(invoiceOptions InvoiceOptions, lnClient LNclient, storage
 	}
 }
 
-type std
+type stdlibHTTP struct {
+	w     

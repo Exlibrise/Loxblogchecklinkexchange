@@ -34,3 +34,6 @@ type stdlibHTTP struct {
 	w           http.ResponseWriter
 	r           *http.Request
 	nextHandler http.HandlerFunc
+}
+
+func (fa stdlibHT

@@ -36,4 +36,5 @@ type stdlibHTTP struct {
 	nextHandler http.HandlerFunc
 }
 
-func (fa stdlibHTTP) getPreimageFromHead
+func (fa stdlibHTTP) getPreimageFromHeader() string {
+	return fa.r.Heade

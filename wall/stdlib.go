@@ -37,4 +37,7 @@ type stdlibHTTP struct {
 }
 
 func (fa stdlibHTTP) getPreimageFromHeader() string {
-	return fa.r.Heade
+	return fa.r.Header.Get("x-preimage")
+}
+
+func 

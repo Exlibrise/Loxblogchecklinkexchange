@@ -40,4 +40,4 @@ func (fa stdlibHTTP) getPreimageFromHeader() string {
 	return fa.r.Header.Get("x-preimage")
 }
 
-func 
+func (fa stdlibHTTP) respondWith

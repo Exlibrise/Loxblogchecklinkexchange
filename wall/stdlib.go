@@ -48,4 +48,4 @@ func (fa stdlibHTTP) getHTTPrequest() *http.Request {
 	return fa.r
 }
 
-func (f
+func (fa stdlibHTTP) respondWithIn

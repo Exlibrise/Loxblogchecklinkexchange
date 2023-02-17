@@ -41,4 +41,6 @@ func (fa stdlibHTTP) getPreimageFromHeader() string {
 }
 
 func (fa stdlibHTTP) respondWithError(err error, errorMsg string, statusCode int) {
-	http.Er
+	http.Error(fa.w, errorMsg, statusCode)
+}
+

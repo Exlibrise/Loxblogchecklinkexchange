@@ -40,4 +40,5 @@ func (fa stdlibHTTP) getPreimageFromHeader() string {
 	return fa.r.Header.Get("x-preimage")
 }
 
-func (fa stdlibHTTP) respondWithError(err error, errorMsg strin
+func (fa stdlibHTTP) respondWithError(err error, errorMsg string, statusCode int) {
+	http.Er

@@ -44,4 +44,5 @@ func (fa stdlibHTTP) respondWithError(err error, errorMsg string, statusCode int
 	http.Error(fa.w, errorMsg, statusCode)
 }
 
-func (fa stdlibHTTP) get
+func (fa stdlibHTTP) getHTTPrequest() *http.Request {
+	

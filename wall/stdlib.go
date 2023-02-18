@@ -48,4 +48,5 @@ func (fa stdlibHTTP) getHTTPrequest() *http.Request {
 	return fa.r
 }
 
-func (fa stdlibHTTP) respondWithInvoice(headers map[string]string, statusCode 
+func (fa stdlibHTTP) respondWithInvoice(headers map[string]string, statusCode int, body []byte) {
+	// Note:

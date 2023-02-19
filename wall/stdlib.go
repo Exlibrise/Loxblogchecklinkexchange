@@ -53,4 +53,5 @@ func (fa stdlibHTTP) respondWithInvoice(headers map[string]string, statusCode in
 	for k, v := range headers {
 		fa.w.Header().Set(k, v)
 	}
-	// Status cod
+	// Status code
+	fa.w.WriteHeader(

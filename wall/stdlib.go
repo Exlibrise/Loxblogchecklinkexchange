@@ -55,4 +55,4 @@ func (fa stdlibHTTP) respondWithInvoice(headers map[string]string, statusCode in
 	}
 	// Status code
 	fa.w.WriteHeader(statusCode)
-	// The actual
+	// The actual invoice goes into th

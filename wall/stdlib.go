@@ -59,4 +59,5 @@ func (fa stdlibHTTP) respondWithInvoice(headers map[string]string, statusCode in
 	fa.w.Write(body)
 }
 
-func (fa stdlibHT
+func (fa stdlibHTTP) next() error {
+	fa.nextHandler.S

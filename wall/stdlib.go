@@ -60,4 +60,6 @@ func (fa stdlibHTTP) respondWithInvoice(headers map[string]string, statusCode in
 }
 
 func (fa stdlibHTTP) next() error {
-	fa.nextHandler.S
+	fa.nextHandler.ServeHTTP(fa.w, fa.r)
+	return nil
+}
